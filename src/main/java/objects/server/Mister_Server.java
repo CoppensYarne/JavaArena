@@ -33,10 +33,15 @@ public class Mister_Server {
     private void characterInfo(Context context){
         String desiredCharacterName = (new JSONObject(context.body()).getString("name"));
 
+        System.out.println("Checking for: " + desiredCharacterName);
+
         for(ArenaCharacter character : currentGame.getAllCharacters()){
+            System.out.println("Is " + desiredCharacterName + " = " + character.getName() + "?");
             if(character.getName() == desiredCharacterName){
+                System.out.println("yes!");
                 context.json(character);
             }
+            System.out.println("No :(");
         }
 
     }
