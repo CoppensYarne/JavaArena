@@ -3,17 +3,17 @@ package objects.server;
 import io.javalin.Context;
 import io.javalin.Javalin;
 import main.Game;
-import objects.ArenaObject;
-import objects.character.ArenaCharacter;
 import org.json.JSONObject;
+import repositories.GameRepository;
 
 import java.io.IOException;
 
 public class Mister_Server {
 
-    private Game currentGame;
+    private static GameRepository gr;
 
     public static void main(String[] args) {
+        gr = new GameRepository();
         new Mister_Server().run();
     }
 
@@ -26,18 +26,19 @@ public class Mister_Server {
                 .start();
 
         server.post("/API/StartGame", this::StartGame);
-        server.get("/API/NextTurn", this::nextTurn);
+        server.post("/API/NextTurn", this::nextTurn);
         server.post("/API/ObjectInfo", this::objectInfo);
     }
 
 
     private void objectInfo(Context context){
         int objectPosition = (new JSONObject(context.body()).getInt("position"));
+        String ownerName = new JSONObject(context.body()).getString("owner");
 
         System.out.println("Checking for: " + objectPosition);
 
-        if(!(currentGame.getArena().acquireObjectAtPosition(objectPosition) == null)){
-            context.json(currentGame.getArena().acquireObjectAtPosition(objectPosition));
+        if(!(gr.getGameByOwnerName(ownerName).getArena().acquireObjectAtPosition(objectPosition) == null)){
+            context.json(gr.getGameByOwnerName(ownerName).getArena().acquireObjectAtPosition(objectPosition));
         }
 
 
@@ -49,18 +50,20 @@ public class Mister_Server {
         JSONObject gameInfoJSON = new JSONObject(context.body());
         int arenaLength = gameInfoJSON.getInt("length");
         int arenaHeight = gameInfoJSON.getInt("height");
+        String ownerName = new JSONObject(context.body()).getString("owner");
 
-        currentGame = new Game(arenaLength, arenaHeight);
+        gr.addGame(new Game(ownerName, arenaLength, arenaHeight));
 
-        context.json(currentGame);
+        context.json(gr.getGameByOwnerName(ownerName));
 
     }
 
     private void nextTurn(Context context){
         System.out.println("Next Turn");
-        currentGame.nextTurn();
+        String ownerName = new JSONObject(context.body()).getString("owner");
+        gr.getGameByOwnerName(ownerName).nextTurn();
 
-        context.json(currentGame);
+        context.json(gr.getGameByOwnerName(ownerName));
 
     }
 

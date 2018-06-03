@@ -21,6 +21,7 @@ import java.util.Random;
 
 public class Game {
 
+    private String gameOwner;
     private Arena arena;
     @JsonIgnore
     private static WeaponRepository wr;
@@ -38,12 +39,20 @@ public class Game {
         startGame();
     }
 
-    public Game(int arenaLength, int arenaHeight) throws IOException {
+    public Game(String ownerName, int arenaLength, int arenaHeight) throws IOException {
         wr = new WeaponRepository();
         allWeapons = wr.getAllWeapons();
         cr = new CharacterRepository();
         allCharacters = cr.getAllCharacters();
         startGame(arenaLength, arenaHeight);
+    }
+
+    public String getGameOwner() {
+        return gameOwner;
+    }
+
+    public void setGameOwner(String gameOwner) {
+        this.gameOwner = gameOwner;
     }
 
     public void startGame() {

@@ -28,7 +28,7 @@ public class Main {
                 System.out.print("Height: ");
                 arenaHeight = reader.nextInt();
             }
-            game = new Game(arenaLength, arenaHeight);
+            game = new Game("CLI", arenaLength, arenaHeight);
             isConsole = false;
         } else {
             game = new Game();
