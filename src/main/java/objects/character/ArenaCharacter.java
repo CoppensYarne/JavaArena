@@ -185,34 +185,16 @@ public class ArenaCharacter implements ArenaObject {
             if (chosenLimb == this.torso) {
                 this.currentHealth = 0;
             } else {
-                if (this.torso.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                if (this.torso.acquireUnderlyingLimbs() != null && this.torso.acquireUnderlyingLimbs().contains(chosenLimb)) {
                     newLimbs = this.torso.acquireUnderlyingLimbs();
                     newLimbs.remove(chosenLimb);
                     this.torso.setUnderlyingLimbs(newLimbs);
                 } else {
                     for (Limb torsoLimb : this.torso.acquireUnderlyingLimbs()) {
-                        if (torsoLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                        if (torso.acquireUnderlyingLimbs() != null && torsoLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
                             newLimbs = torsoLimb.acquireUnderlyingLimbs();
                             newLimbs.remove(chosenLimb);
                             torsoLimb.setUnderlyingLimbs(newLimbs);
-                        } else {
-                            for (Limb torsoLimbLimb : torsoLimb.acquireUnderlyingLimbs()) {
-                                if (torsoLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                                    newLimbs = torsoLimbLimb.acquireUnderlyingLimbs();
-                                    newLimbs.remove(chosenLimb);
-                                    torsoLimbLimb.setUnderlyingLimbs(newLimbs);
-                                } else {
-                                    System.out.println("Here it errors out");
-                                    System.out.println(torsoLimbLimb.getName());
-                                    for (Limb torsoLimbLimbLimb : torsoLimbLimb.acquireUnderlyingLimbs()) {
-                                        if (torsoLimbLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                                            newLimbs = torsoLimbLimbLimb.acquireUnderlyingLimbs();
-                                            newLimbs.remove(chosenLimb);
-                                            torsoLimbLimbLimb.setUnderlyingLimbs(newLimbs);
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
                 }
