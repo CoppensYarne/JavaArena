@@ -98,6 +98,7 @@ public class ArenaCharacter implements ArenaObject {
                 name, currentHealth, maxHealth, inventory, currentWeapon.getName(), gender, race);
     }
 
+    @Override
     public int getPosition() {
         return position;
     }

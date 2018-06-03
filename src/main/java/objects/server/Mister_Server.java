@@ -3,6 +3,7 @@ package objects.server;
 import io.javalin.Context;
 import io.javalin.Javalin;
 import main.Game;
+import objects.character.ArenaCharacter;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -25,8 +26,20 @@ public class Mister_Server {
 
         server.post("/API/StartGame", this::StartGame);
         server.get("/API/NextTurn", this::nextTurn);
+        server.get("/API/CharacterInfo", this::characterInfo);
     }
 
+
+    private void characterInfo(Context context){
+        String desiredCharacterName = (new JSONObject(context.body()).getString("name"));
+
+        for(ArenaCharacter character : currentGame.getAllCharacters()){
+            if(character.getName() == desiredCharacterName){
+                context.json(character);
+            }
+        }
+
+    }
 
     private void StartGame(Context context) throws IOException {
         System.out.println("Starting game from server");
