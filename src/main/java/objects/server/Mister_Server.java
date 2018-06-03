@@ -51,6 +51,7 @@ public class Mister_Server {
         int arenaLength = gameInfoJSON.getInt("length");
         int arenaHeight = gameInfoJSON.getInt("height");
         String ownerName = new JSONObject(context.body()).getString("owner");
+        System.out.println("Owner: " + ownerName);
 
         gr.addGame(new Game(ownerName, arenaLength, arenaHeight));
 
@@ -61,6 +62,7 @@ public class Mister_Server {
     private void nextTurn(Context context){
         System.out.println("Next Turn");
         String ownerName = new JSONObject(context.body()).getString("owner");
+        System.out.println("Owner: " + ownerName);
         gr.getGameByOwnerName(ownerName).nextTurn();
 
         context.json(gr.getGameByOwnerName(ownerName));

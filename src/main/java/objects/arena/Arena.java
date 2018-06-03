@@ -62,7 +62,6 @@ public class Arena {
 
     public ArenaObject acquireObjectAtPosition(int position){
         for(ArenaObject object : arenaObjects){
-            System.out.println(object.getPosition());
             if(object.getPosition() == position){
                 return object;
             }
