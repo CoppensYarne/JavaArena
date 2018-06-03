@@ -36,7 +36,7 @@ public class Arena {
 
     private int acquireRandomPosition(){
         Random randomGen = new Random();
-        int randomPos = randomGen.nextInt(squares);
+        int randomPos = randomGen.nextInt(squares + 1);
         return randomPos;
     }
 

@@ -170,6 +170,18 @@ public class Game {
                     add(arenaCharacter.getPosition() - arena.getLength() + 1);
                     add(arenaCharacter.getPosition() - arena.getLength() - 1);
                 }};
+
+                for(int x = 2; x <= arenaCharacter.getCurrentWeapon().getRange() + 1; x++){
+                    allPossiblePositions.add((arenaCharacter.getPosition() + 1) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() - 1) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength()) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength()) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength() + 1) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength() - 1) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength() + 1) * x);
+                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength() - 1) * x);
+                }
+
                 ArrayList<Integer> allAdjacentFilledPositions = new ArrayList<>();
                 for (Integer position : allPossiblePositions) {
                     if (arena.isThereCharacterAtPosition(position)) {
