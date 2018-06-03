@@ -40,6 +40,7 @@ public class Game {
     }
 
     public Game(String ownerName, int arenaLength, int arenaHeight) throws IOException {
+        gameOwner = ownerName;
         wr = new WeaponRepository();
         allWeapons = wr.getAllWeapons();
         cr = new CharacterRepository();
