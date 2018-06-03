@@ -172,34 +172,44 @@ public class ArenaCharacter implements ArenaObject {
     }
 
     public String takeDamage(int amount, Limb chosenLimb) {
+        System.out.println("Taken Damage!");
+        System.out.println(this.name);
+        System.out.println("Limb: " + chosenLimb.getName());
+
         String toReturnString = "";
         this.currentHealth -= amount;
         chosenLimb.getDamaged(amount);
         ArrayList<Limb> newLimbs;
         if (chosenLimb.getCurrentHealth() <= 0) {
             toReturnString += this.name + " lost " + this.gender.getPossession() + " " + chosenLimb + ".";
-            if (this.torso.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                newLimbs = this.torso.acquireUnderlyingLimbs();
-                newLimbs.remove(chosenLimb);
-                this.torso.setUnderlyingLimbs(newLimbs);
+            if (chosenLimb == this.torso) {
+                this.currentHealth = 0;
             } else {
-                for (Limb torsoLimb : this.torso.acquireUnderlyingLimbs()) {
-                    if (torsoLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                        newLimbs = torsoLimb.acquireUnderlyingLimbs();
-                        newLimbs.remove(chosenLimb);
-                        torsoLimb.setUnderlyingLimbs(newLimbs);
-                    } else {
-                        for (Limb torsoLimbLimb : torsoLimb.acquireUnderlyingLimbs()) {
-                            if (torsoLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                                newLimbs = torsoLimbLimb.acquireUnderlyingLimbs();
-                                newLimbs.remove(chosenLimb);
-                                torsoLimbLimb.setUnderlyingLimbs(newLimbs);
-                            } else {
-                                for (Limb torsoLimbLimbLimb : torsoLimbLimb.acquireUnderlyingLimbs()) {
-                                    if (torsoLimbLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
-                                        newLimbs = torsoLimbLimbLimb.acquireUnderlyingLimbs();
-                                        newLimbs.remove(chosenLimb);
-                                        torsoLimbLimbLimb.setUnderlyingLimbs(newLimbs);
+                if (this.torso.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                    newLimbs = this.torso.acquireUnderlyingLimbs();
+                    newLimbs.remove(chosenLimb);
+                    this.torso.setUnderlyingLimbs(newLimbs);
+                } else {
+                    for (Limb torsoLimb : this.torso.acquireUnderlyingLimbs()) {
+                        if (torsoLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                            newLimbs = torsoLimb.acquireUnderlyingLimbs();
+                            newLimbs.remove(chosenLimb);
+                            torsoLimb.setUnderlyingLimbs(newLimbs);
+                        } else {
+                            for (Limb torsoLimbLimb : torsoLimb.acquireUnderlyingLimbs()) {
+                                if (torsoLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                                    newLimbs = torsoLimbLimb.acquireUnderlyingLimbs();
+                                    newLimbs.remove(chosenLimb);
+                                    torsoLimbLimb.setUnderlyingLimbs(newLimbs);
+                                } else {
+                                    System.out.println("Here it errors out");
+                                    System.out.println(torsoLimbLimb.getName());
+                                    for (Limb torsoLimbLimbLimb : torsoLimbLimb.acquireUnderlyingLimbs()) {
+                                        if (torsoLimbLimbLimb.acquireUnderlyingLimbs().contains(chosenLimb)) {
+                                            newLimbs = torsoLimbLimbLimb.acquireUnderlyingLimbs();
+                                            newLimbs.remove(chosenLimb);
+                                            torsoLimbLimbLimb.setUnderlyingLimbs(newLimbs);
+                                        }
                                     }
                                 }
                             }
