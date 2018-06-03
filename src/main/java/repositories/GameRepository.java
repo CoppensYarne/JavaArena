@@ -17,6 +17,10 @@ public class GameRepository {
     }
 
     public void addGame(Game game){
+        if(!(getGameByOwnerName(game.getGameOwner()) == null)){
+            allGames.remove(getGameByOwnerName(game.getGameOwner()));
+        }
+
         allGames.add(game);
     }
 
