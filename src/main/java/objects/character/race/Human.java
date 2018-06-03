@@ -24,7 +24,7 @@ public class Human implements Race {
 
     @Override
     public Torso getLimbs() {
-        ArrayList<Limb> limbs = new ArrayList<>();
+        ArrayList<Limb> limbs = new ArrayList<Limb>();
 
         Torso torso = getHumanTorso();
 
@@ -73,12 +73,12 @@ public class Human implements Race {
 
     private Torso getHumanTorso(){
         return new Torso(
-                "Torso", new ArrayList<>() {{add(new Neck("Neck", getHumanHead(), 10));}},
-                new ArrayList<>() {{
+                "Torso", new ArrayList<Neck>() {{add(new Neck("Neck", getHumanHead(), 10));}},
+                new ArrayList<Arm>() {{
                     add(getHumanLeftArm());
                     add(getHumanRightArm());
                 }},
-                new ArrayList<>() {{
+                new ArrayList<Leg>() {{
                     add(getHumanLeftLeg());
                     add(getHumanRightLeg());
                 }},
@@ -88,18 +88,18 @@ public class Human implements Race {
 
     private Head getHumanHead(){
         return new Head("Head",
-                new ArrayList<>() {{
+                new ArrayList<Eye>() {{
                     add(new Eye("Left eye", 20));
                     add(new Eye("Right eye", 20));
                 }},
-                new ArrayList<>() {{
+                new ArrayList<Nose>() {{
                     add(new Nose("Nose", 20));
                 }},
-                new ArrayList<>() {{
+                new ArrayList<Ear>() {{
                     add(new Ear("Left ear", 20));
                     add(new Ear("Right ear", 20));
                 }},
-                new ArrayList<>() {{
+                new ArrayList<Mouth>() {{
                     add(new Mouth("Mouth", 20));
                 }},
                 100
@@ -118,13 +118,13 @@ public class Human implements Race {
 
     private Hand getHumanLeftHand(){
         return new Hand(
-                "Left hand", new ArrayList<>() {{
+                "Left hand", new ArrayList<Finger>() {{
                     add(new Finger("Left pinky", 20));
                     add(new Finger("Left ring finger", 20));
                     add(new Finger("Left middle finger", 20));
                     add(new Finger("Left index finger", 20));
                 }},
-                new ArrayList<>() {{
+                new ArrayList<Thumb>() {{
                     add(new Thumb("Left thumb", 20));
                 }},
                 20
@@ -133,13 +133,13 @@ public class Human implements Race {
 
     private Hand getHumanRightHand(){
         return new Hand(
-                "Right hand", new ArrayList<>() {{
+                "Right hand", new ArrayList<Finger>() {{
             add(new Finger("Right pinky", 20));
             add(new Finger("Right ring finger", 20));
             add(new Finger("Right middle finger", 20));
             add(new Finger("Right index finger", 20));
         }},
-                new ArrayList<>() {{
+                new ArrayList<Thumb>() {{
                     add(new Thumb("Right thumb", 20));
                 }},
                 20
@@ -149,7 +149,7 @@ public class Human implements Race {
     private Leg getHumanRightLeg(){
         return new Leg("Right leg",
                 new Foot(
-                "Right foot", new ArrayList<>(){{
+                "Right foot", new ArrayList<Toe>(){{
                     add(new Toe("Right little toe", 10));
                     add(new Toe("Right fourth toe", 10));
                     add(new Toe("Right middle toe", 10));
@@ -163,7 +163,7 @@ public class Human implements Race {
     private Leg getHumanLeftLeg(){
         return new Leg("Left leg",
                 new Foot(
-                "Left foot", new ArrayList<>(){{
+                "Left foot", new ArrayList<Toe>(){{
             add(new Toe("Left little toe", 10));
             add(new Toe("Left fourth toe", 10));
             add(new Toe("Left middle toe", 10));

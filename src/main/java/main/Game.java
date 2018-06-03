@@ -73,7 +73,7 @@ public class Game {
             int toTryPosition = character.getPosition();
             boolean positionTaken;
 
-            ArrayList<Integer> toTryPositions = new ArrayList<>() {{
+            ArrayList<Integer> toTryPositions = new ArrayList<Integer>() {{
                 add(toTryPosition + 1);
                 add(toTryPosition + arena.getLength());
                 add(toTryPosition - 1);
@@ -141,7 +141,7 @@ public class Game {
         public String attackAdjacentCharacters () {
             String toReturnString = "";
             for (ArenaCharacter arenaCharacter : allCharacters) {
-                ArrayList<Integer> allPossiblePositions = new ArrayList<>() {{
+                ArrayList<Integer> allPossiblePositions = new ArrayList<Integer>() {{
                     add(arenaCharacter.getPosition() + 1);
                     add(arenaCharacter.getPosition() - 1);
                     add(arenaCharacter.getPosition() + arena.getLength());
