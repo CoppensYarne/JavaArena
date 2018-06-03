@@ -195,8 +195,6 @@ public class Game {
                 }
             }
 
-            toReturnString += "\n";
-
             moveCharactersRandom();
 
             toReturnString += attackAdjacentCharacters();
@@ -206,20 +204,18 @@ public class Game {
             ArrayList<ArenaCharacter> deadCharacters = getNewDeadCharacters();
             if (deadCharacters.size() != 0) {
                 toReturnString += deadCharacters;
+                toReturnString += "\n";
             }
-
-            toReturnString += "\n";
 
             for (ArenaCharacter deadCharacter : getNewDeadCharacters()) {
                 toReturnString += deadCharacter.getName() + " died.";
+                toReturnString += "\n";
                 int characterPosition = deadCharacter.getPosition();
                 if (!deadCharacter.getCurrentWeapon().getName().equals("Fists")) {
                     deadCharacter.getCurrentWeapon().setPosition(characterPosition);
                 }
                 allCharacters.remove(deadCharacter);
             }
-
-            toReturnString += "\n";
 
             for (ArenaCharacter character : allCharacters) {
                 for (Weapon weapon : allWeapons) {
@@ -229,8 +225,6 @@ public class Game {
                     }
                 }
             }
-
-            toReturnString += "\n";
 
             updateArena();
 
