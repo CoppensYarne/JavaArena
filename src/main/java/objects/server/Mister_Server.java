@@ -26,7 +26,7 @@ public class Mister_Server {
 
         server.post("/API/StartGame", this::StartGame);
         server.get("/API/NextTurn", this::nextTurn);
-        server.get("/API/CharacterInfo", this::characterInfo);
+        server.post("/API/CharacterInfo", this::characterInfo);
     }
 
 
