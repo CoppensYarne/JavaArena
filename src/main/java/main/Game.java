@@ -224,7 +224,7 @@ public class Game {
 
             updateArena();
 
-            toReturnString = toReturnString.replace(".", ".\n\n");
+            //toReturnString = toReturnString.replace(".", ".\n\n");
 
             gameEvents = toReturnString;
             return toReturnString;
