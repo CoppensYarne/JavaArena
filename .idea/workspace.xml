@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="245" column="65" selection-start-line="245" selection-start-column="65" selection-end-line="245" selection-end-column="65" />
+            <state relative-caret-position="285">
+              <caret line="218" column="62" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1501#1502#0" expanded="true" />
@@ -171,7 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>acq</find>
       <find>losel</find>
       <find>acquireRan</find>
       <find>acquirerandom</find>
@@ -201,6 +197,7 @@
       <find>acquireAll</find>
       <find>acquire</find>
       <find>getnew</find>
+      <find>graveyard</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1086,8 +1083,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="245" column="65" selection-start-line="245" selection-start-column="65" selection-end-line="245" selection-end-column="65" />
+        <state relative-caret-position="285">
+          <caret line="218" column="62" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1501#1502#0" expanded="true" />

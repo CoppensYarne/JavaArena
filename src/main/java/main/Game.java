@@ -216,7 +216,7 @@ public class Game {
                 toReturnString += "\n";
             }
 
-            for (ArenaCharacter deadCharacter : acquireNewDeadCharacters()) {
+            for (ArenaCharacter deadCharacter : deadCharacters) {
                 toReturnString += deadCharacter.getName() + " died.";
                 toReturnString += "\n";
                 int characterPosition = deadCharacter.getPosition();
