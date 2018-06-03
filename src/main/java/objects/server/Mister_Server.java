@@ -36,7 +36,7 @@ public class Mister_Server {
 
         System.out.println("Checking for: " + objectPosition);
 
-        if(!(currentGame.getArena().acquireCharacterAtPosition(objectPosition) == null)){
+        if(!(currentGame.getArena().acquireObjectAtPosition(objectPosition) == null)){
             context.json(currentGame.getArena().acquireObjectAtPosition(objectPosition));
         }
 
