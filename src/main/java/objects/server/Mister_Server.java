@@ -40,6 +40,7 @@ public class Mister_Server {
             if(character.getName().equals(desiredCharacterName)){
                 System.out.println("yes!");
                 context.json(character);
+                break;
             }
             System.out.println("No :(");
         }
