@@ -42,7 +42,7 @@ public class CharacterRepository {
     private ArrayList<ArenaCharacter> loadTestCharacters() throws IOException {
         ArrayList<ArenaCharacter> allCharacters = new ArrayList<>();
         System.out.println();
-        JSONArray allCharactersJSON = new JSONArray(readFile(System.getProperty("user.dir") + "\\src\\main\\java\\jsonFiles\\arenaCharacters.json"));
+        JSONArray allCharactersJSON = new JSONArray(readFile(System.getProperty("user.dir") + "/src/main/java/jsonFiles/arenaCharacters.json"));
 
         for(Object characterObject : allCharactersJSON){
             JSONObject characterJSON = (JSONObject) characterObject;

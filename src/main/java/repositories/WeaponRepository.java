@@ -37,7 +37,7 @@ public class WeaponRepository {
 
     private ArrayList<Weapon> loadAllWeapons() throws IOException {
         ArrayList<Weapon> allWeapons = new ArrayList<>();
-        JSONArray allWeaponsJSON = new JSONArray(readFile(System.getProperty("user.dir") + "\\src\\main\\java\\jsonFiles\\weapons.json"));
+        JSONArray allWeaponsJSON = new JSONArray(readFile(System.getProperty("user.dir") + "/src/main/java/jsonFiles/weapons.json"));
 
         for(Object weaponObject : allWeaponsJSON){
             JSONObject weaponJSON = (JSONObject) weaponObject;
