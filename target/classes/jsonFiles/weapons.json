@@ -1,0 +1,101 @@
+[
+	{
+	  "name": "Sword",
+	  "pastVerb": "Slashed",
+	  "presentVerb": "Slash",
+	  "damage": 5,
+	  "durability": 5,
+	  "toInflictStatus": "BLEEDING",
+	  "range": 1
+	},
+	{
+	  "name": "Snake",
+	  "pastVerb": "Bit",
+	  "presentVerb": "Bite",
+	  "damage": 8,
+	  "durability": 2,
+	  "toInflictStatus": "POISONED",
+	  "range": 3
+	},
+	{
+	  "name": "Wooden stick",
+	  "pastVerb": "Hit",
+	  "presentVerb": "Hit",
+	  "damage": 2,
+	  "durability": 2,
+	  "toInflictStatus": "NONE",
+	  "range": 1
+	},
+	{
+	  "name": "Rock",
+	  "pastVerb": "Hit",
+	  "presentVerb": "Hit",
+	  "damage": 2,
+	  "durability": 5,
+	  "toInflictStatus": "NONE",
+	  "range": 1
+	},
+	{
+	  "name": "Bow",
+	  "pastVerb": "Shot",
+	  "presentVerb": "Shoot",
+	  "damage": 6,
+	  "durability": 4,
+	  "toInflictStatus": "BLEEDING",
+	  "range": 6
+	},
+	{
+	  "name": "Freeze ray",
+	  "pastVerb": "Shot",
+	  "presentVerb": "Shoot",
+	  "damage": 4,
+	  "durability": 2,
+	  "toInflictStatus": "FROZEN",
+	  "range": 5
+	},
+	{
+	  "name": "Lightsaber",
+	  "pastVerb": "Sliced",
+	  "presentVerb": "Slice",
+	  "damage": 10,
+	  "durability": 5,
+	  "toInflictStatus": "NONE",
+	  "range": 2
+	},
+	{
+	  "name": "Ninja Star",
+	  "pastVerb": "Hit",
+	  "presentVerb": "Hit",
+	  "damage": 3,
+	  "durability": 10,
+	  "toInflictStatus": "BLEEDING",
+	  "range": 5
+	},
+	{
+	  "name": "Computer",
+	  "pastVerb": "Hacked",
+	  "presentVerb": "Hack",
+	  "damage": 2,
+	  "durability": 5,
+	  "toInflictStatus": "FROZEN",
+	  "range": 5
+	},
+	{
+	  "name": "Cup",
+	  "pastVerb": "Smashed",
+	  "presentVerb": "Smash",
+	  "damage": 2,
+	  "durability": 1,
+	  "toInflictStatus": "NONE",
+	  "range": 1
+	},
+	{
+	  "name": "Boombox",
+	  "pastVerb": "Deafened",
+	  "presentVerb": "Deafen",
+	  "damage": 8,
+	  "durability": 5,
+	  "toInflictStatus": "NONE",
+	  "range": 3
+	}
+]
