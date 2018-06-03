@@ -37,7 +37,7 @@ public class Mister_Server {
 
         for(ArenaCharacter character : currentGame.getAllCharacters()){
             System.out.println("Is " + desiredCharacterName + " = " + character.getName() + "?");
-            if(character.getName() == desiredCharacterName){
+            if(character.getName().equals(desiredCharacterName)){
                 System.out.println("yes!");
                 context.json(character);
             }
