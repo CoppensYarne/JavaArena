@@ -3,6 +3,7 @@ package objects.server;
 import io.javalin.Context;
 import io.javalin.Javalin;
 import main.Game;
+import objects.ArenaObject;
 import objects.character.ArenaCharacter;
 import org.json.JSONObject;
 
@@ -26,24 +27,20 @@ public class Mister_Server {
 
         server.post("/API/StartGame", this::StartGame);
         server.get("/API/NextTurn", this::nextTurn);
-        server.post("/API/CharacterInfo", this::characterInfo);
+        server.post("/API/ObjectInfo", this::objectInfo);
     }
 
 
-    private void characterInfo(Context context){
-        String desiredCharacterName = (new JSONObject(context.body()).getString("name"));
+    private void objectInfo(Context context){
+        int objectPosition = (new JSONObject(context.body()).getInt("position"));
 
-        System.out.println("Checking for: " + desiredCharacterName);
+        System.out.println("Checking for: " + objectPosition);
 
-        for(ArenaCharacter character : currentGame.getAllCharacters()){
-            System.out.println("Is " + desiredCharacterName + " = " + character.getName() + "?");
-            if(character.getName().equals(desiredCharacterName)){
-                System.out.println("yes!");
-                context.json(character);
-                break;
-            }
-            System.out.println("No :(");
+        if(!(currentGame.getArena().acquireCharacterAtPosition(objectPosition) == null)){
+            context.json(currentGame.getArena().acquireCharacterAtPosition(objectPosition));
         }
+
+
 
     }
 
