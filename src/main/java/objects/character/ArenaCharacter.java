@@ -172,9 +172,6 @@ public class ArenaCharacter implements ArenaObject {
     }
 
     public String takeDamage(int amount, Limb chosenLimb) {
-        System.out.println("Taken Damage!");
-        System.out.println(this.name);
-        System.out.println("Limb: " + chosenLimb.getName());
 
         String toReturnString = "";
         this.currentHealth -= amount;

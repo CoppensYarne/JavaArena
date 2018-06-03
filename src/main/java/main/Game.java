@@ -28,6 +28,7 @@ public class Game {
     @JsonIgnore
     private static CharacterRepository cr;
     private ArrayList<ArenaCharacter> allCharacters;
+    private ArrayList<ArenaCharacter> graveyard = new ArrayList<>();
     private ArrayList<Weapon> allWeapons;
     private String gameEvents;
 
@@ -70,6 +71,14 @@ public class Game {
 
     public void setGameEvents(String gameEvents) {
         this.gameEvents = gameEvents;
+    }
+
+    public ArrayList<ArenaCharacter> getGraveyard() {
+        return graveyard;
+    }
+
+    public void setGraveyard(ArrayList<ArenaCharacter> graveyard) {
+        this.graveyard = graveyard;
     }
 
     public ArenaCharacter acquireRandomCharacter() {
@@ -201,13 +210,13 @@ public class Game {
 
             toReturnString += "\n";
 
-            ArrayList<ArenaCharacter> deadCharacters = getNewDeadCharacters();
+            ArrayList<ArenaCharacter> deadCharacters = acquireNewDeadCharacters();
             if (deadCharacters.size() != 0) {
                 toReturnString += deadCharacters;
                 toReturnString += "\n";
             }
 
-            for (ArenaCharacter deadCharacter : getNewDeadCharacters()) {
+            for (ArenaCharacter deadCharacter : acquireNewDeadCharacters()) {
                 toReturnString += deadCharacter.getName() + " died.";
                 toReturnString += "\n";
                 int characterPosition = deadCharacter.getPosition();
@@ -234,13 +243,13 @@ public class Game {
             return toReturnString;
         }
 
-        public ArrayList<ArenaCharacter> getNewDeadCharacters () {
+        public ArrayList<ArenaCharacter> acquireNewDeadCharacters() {
             ArrayList<ArenaCharacter> newDeadCharacters = new ArrayList<>();
 
             for (ArenaCharacter character : allCharacters) {
                 if (character.getCurrentHealth() <= 0) {
-
                     newDeadCharacters.add(character);
+                    graveyard.add(character);
                 }
             }
 
