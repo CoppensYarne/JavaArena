@@ -30,7 +30,7 @@ public class Mister_Server {
 
     private void StartGame(Context context) throws IOException {
         System.out.println("Starting game from server");
-        JSONObject gameInfoJSON = new JSONObject(context.toString());
+        JSONObject gameInfoJSON = new JSONObject(context.body());
         int arenaLength = gameInfoJSON.getInt("length");
         int arenaHeight = gameInfoJSON.getInt("height");
 
