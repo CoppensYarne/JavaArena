@@ -60,6 +60,15 @@ public class Arena {
         return null;
     }
 
+    public ArenaObject acquireObjectAtPosition(int position){
+        for(ArenaObject object : arenaObjects){
+            if(object.getPosition() == position){
+                return object;
+            }
+        }
+        return null;
+    }
+
     public boolean isThereCharacterAtPosition(int position){
         for(ArenaObject arenaCharacter : arenaObjects){
             if(arenaCharacter instanceof ArenaCharacter){
