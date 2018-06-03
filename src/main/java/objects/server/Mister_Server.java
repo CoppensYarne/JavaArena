@@ -29,6 +29,7 @@ public class Mister_Server {
 
 
     private void StartGame(Context context) throws IOException {
+        System.out.println("Starting game from server");
         JSONObject gameInfoJSON = new JSONObject(context.toString());
         int arenaLength = gameInfoJSON.getInt("length");
         int arenaHeight = gameInfoJSON.getInt("height");
@@ -40,7 +41,7 @@ public class Mister_Server {
     }
 
     private void nextTurn(Context context){
-
+        System.out.println("Next Turn");
         currentGame.nextTurn();
 
         context.json(currentGame);
