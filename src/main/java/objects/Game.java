@@ -135,42 +135,6 @@ public class Game {
                     character.setPosition(newPosition);
                 }
             }
-
-            /*while (newPosition == character.getPosition() || newPosition < 0 || newPosition > arena.getSquares() || positionTaken || newPosition % arena.getLength() == 0) {
-                positionTaken = false;
-                newPosition = character.getPosition();
-                Random random = new Random();
-                int randomInt = random.nextInt(8);
-                switch (randomInt) {
-                    case 0:
-                        newPosition += 1;
-                        break;
-                    case 1:
-                        newPosition += arena.getLength();
-                        break;
-                    case 2:
-                        newPosition -= 1;
-                        break;
-                    case 3:
-                        newPosition -= arena.getLength();
-                        break;
-                    case 4:
-                        newPosition -= arena.getLength() + 1;
-                    case 5:
-                        newPosition -= arena.getLength() - 1;
-                    case 6:
-                        newPosition += arena.getLength() + 1;
-                    case 7:
-                        newPosition += arena.getLength() - 1;
-                }
-                for (ArenaCharacter arenaCharacter : allCharacters) {
-                    if (character != arenaCharacter && arenaCharacter.getPosition() == newPosition) {
-                        positionTaken = true;
-                    }
-                }
-            }
-            character.setPosition(newPosition);
-        }*/
         }
     }
 
@@ -178,18 +142,9 @@ public class Game {
         public String attackAdjacentCharacters () {
             String toReturnString = "";
             for (ArenaCharacter arenaCharacter : allCharacters) {
-                ArrayList<Integer> allPossiblePositions = new ArrayList<Integer>() {{
-                    add(arenaCharacter.getPosition() + 1);
-                    add(arenaCharacter.getPosition() - 1);
-                    add(arenaCharacter.getPosition() + arena.getLength());
-                    add(arenaCharacter.getPosition() - arena.getLength());
-                    add(arenaCharacter.getPosition() + arena.getLength() + 1);
-                    add(arenaCharacter.getPosition() + arena.getLength() - 1);
-                    add(arenaCharacter.getPosition() - arena.getLength() + 1);
-                    add(arenaCharacter.getPosition() - arena.getLength() - 1);
-                }};
+                ArrayList<Integer> allPossiblePositions = new ArrayList<Integer>();
 
-                for(int x = 2; x <= arenaCharacter.getCurrentWeapon().getRange() + 1; x++){
+                for(int x = 1; x <= arenaCharacter.getCurrentWeapon().getRange(); x++){
                     allPossiblePositions.add((arenaCharacter.getPosition() + 1) * x);
                     allPossiblePositions.add((arenaCharacter.getPosition() - 1) * x);
                     allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength()) * x);
