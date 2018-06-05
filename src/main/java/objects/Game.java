@@ -145,14 +145,14 @@ public class Game {
                 ArrayList<Integer> allPossiblePositions = new ArrayList<Integer>();
 
                 for(int x = 1; x <= arenaCharacter.getCurrentWeapon().getRange(); x++){
-                    allPossiblePositions.add((arenaCharacter.getPosition() + 1) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() - 1) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength()) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength()) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength() + 1) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() + arena.getLength() - 1) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength() + 1) * x);
-                    allPossiblePositions.add((arenaCharacter.getPosition() - arena.getLength() - 1) * x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() + x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() - x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() + arena.getLength() * x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() - arena.getLength() * x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() + arena.getLength()*x + x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() + arena.getLength()*x - x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() - arena.getLength()*x + x);
+                    allPossiblePositions.add(arenaCharacter.getPosition() - arena.getLength()*x - x);
                 }
 
                 ArrayList<Integer> allAdjacentFilledPositions = new ArrayList<>();

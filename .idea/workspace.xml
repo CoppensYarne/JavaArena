@@ -23,8 +23,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="144" column="77" lean-forward="true" selection-start-line="144" selection-start-column="77" selection-end-line="144" selection-end-column="77" />
+            <state relative-caret-position="348">
+              <caret line="154" column="98" selection-start-line="154" selection-start-column="98" selection-end-line="154" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2207#2208#0" expanded="true" />
@@ -47,6 +47,7 @@
                 <element signature="e#2945#2946#0" expanded="true" />
                 <element signature="e#3014#3015#0" expanded="true" />
                 <element signature="e#3056#3057#0" expanded="true" />
+                <element signature="e#4888#4897#0" expanded="true" />
                 <element signature="e#12682#12683#0" expanded="true" />
                 <element signature="e#12726#12727#0" expanded="true" />
                 <element signature="e#12922#12923#0" expanded="true" />
@@ -519,6 +520,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.2911796" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -539,7 +541,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.2911796" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -939,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="144" column="77" lean-forward="true" selection-start-line="144" selection-start-column="77" selection-end-line="144" selection-end-column="77" />
+        <state relative-caret-position="348">
+          <caret line="154" column="98" selection-start-line="154" selection-start-column="98" selection-end-line="154" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2207#2208#0" expanded="true" />
@@ -963,6 +964,7 @@
             <element signature="e#2945#2946#0" expanded="true" />
             <element signature="e#3014#3015#0" expanded="true" />
             <element signature="e#3056#3057#0" expanded="true" />
+            <element signature="e#4888#4897#0" expanded="true" />
             <element signature="e#12682#12683#0" expanded="true" />
             <element signature="e#12726#12727#0" expanded="true" />
             <element signature="e#12922#12923#0" expanded="true" />
