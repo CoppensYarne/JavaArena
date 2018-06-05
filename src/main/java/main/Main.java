@@ -1,5 +1,6 @@
 package main;
 
+import objects.Game;
 import objects.character.ArenaCharacter;
 
 import java.io.IOException;
@@ -21,13 +22,6 @@ public class Main {
             int arenaHeight = Integer.parseInt(args[1]);
             System.out.println(arenaLength * arenaHeight);
             System.out.println(game.getAllCharacters().size() + game.getAllWeapons().size());
-            while ((arenaLength * arenaHeight) < (game.getAllCharacters().size() + game.getAllWeapons().size())) {
-                System.out.println("Arena too small, give new size:");
-                System.out.print("Length: ");
-                arenaLength = reader.nextInt();
-                System.out.print("Height: ");
-                arenaHeight = reader.nextInt();
-            }
             game = new Game("CLI", arenaLength, arenaHeight);
             isConsole = false;
         } else {

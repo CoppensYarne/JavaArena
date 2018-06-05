@@ -1,8 +1,9 @@
-package main;
+package objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import exceptions.ArenaTooSmallException;
 import objects.arena.Arena;
 import objects.arena.Types;
 import objects.ArenaObject;
@@ -31,6 +32,7 @@ public class Game {
     private ArrayList<ArenaCharacter> graveyard = new ArrayList<>();
     private ArrayList<Weapon> allWeapons;
     private String gameEvents;
+    private String errorMessage = "";
 
     public Game() throws IOException {
         wr = new WeaponRepository();
@@ -41,12 +43,28 @@ public class Game {
     }
 
     public Game(String ownerName, int arenaLength, int arenaHeight) throws IOException {
-        gameOwner = ownerName;
-        wr = new WeaponRepository();
-        allWeapons = wr.getAllWeapons();
-        cr = new CharacterRepository();
-        allCharacters = cr.getAllCharacters();
-        startGame(arenaLength, arenaHeight);
+        try {
+            gameOwner = ownerName;
+            wr = new WeaponRepository();
+            allWeapons = wr.getAllWeapons();
+            cr = new CharacterRepository();
+            allCharacters = cr.getAllCharacters();
+            if((arenaLength * arenaHeight) < (allCharacters.size() + allWeapons.size())){
+                throw new ArenaTooSmallException("User " + gameOwner + " requested a size of " + arenaLength + "x" + arenaHeight + "=" + (arenaLength * arenaHeight+
+                " but it needs to be at least " + ((allCharacters.size() + allWeapons.size()))));
+            }
+            startGame(arenaLength, arenaHeight);
+        }catch(ArenaTooSmallException ex){
+            errorMessage = ex.getMessage();
+        }
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
     public String getGameOwner() {

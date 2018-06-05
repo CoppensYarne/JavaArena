@@ -2,7 +2,7 @@ package objects.server;
 
 import io.javalin.Context;
 import io.javalin.Javalin;
-import main.Game;
+import objects.Game;
 import org.json.JSONObject;
 import repositories.GameRepository;
 

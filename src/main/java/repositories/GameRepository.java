@@ -1,6 +1,6 @@
 package repositories;
 
-import main.Game;
+import objects.Game;
 
 import java.util.ArrayList;
 
