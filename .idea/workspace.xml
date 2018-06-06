@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArenaCharacter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArenaCharacter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="283" column="180" selection-start-line="283" selection-start-column="180" selection-end-line="283" selection-end-column="180" />
+            <state relative-caret-position="692">
+              <caret line="376" column="24" selection-start-line="376" selection-start-column="24" selection-end-line="376" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,13 +71,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="200" column="38" lean-forward="true" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+            <state relative-caret-position="604">
+              <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9970#9971#0" expanded="true" />
+                <element signature="e#10001#10002#0" expanded="true" />
+                <element signature="e#10050#10051#0" expanded="true" />
+                <element signature="e#10090#10091#0" expanded="true" />
+                <element signature="e#10150#10151#0" expanded="true" />
+                <element signature="e#10194#10195#0" expanded="true" />
+                <element signature="e#9881#9882#0" expanded="true" />
+                <element signature="e#9931#9932#0" expanded="true" />
+                <element signature="e#10390#10391#0" expanded="true" />
+                <element signature="e#10431#10432#0" expanded="true" />
+                <element signature="e#10502#10503#0" expanded="true" />
+                <element signature="e#10554#10555#0" expanded="true" />
+                <element signature="e#11790#11791#0" expanded="true" />
+                <element signature="e#11826#11827#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getPosit</find>
-      <find>getP</find>
       <find>getPosition</find>
       <find>getPos</find>
       <find>lost</find>
@@ -154,6 +165,8 @@
       <find>nextTurn</find>
       <find>acqui</find>
       <find>acquir</find>
+      <find>moveCh</find>
+      <find>move</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,9 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/java/objects/arena/Types.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" />
-        <option value="$PROJECT_DIR$/src/main/java/objects/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/race/Human.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objects/Game.java" />
       </list>
     </option>
   </component>
@@ -809,16 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="200" column="38" lean-forward="true" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacterDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -869,10 +872,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="283" column="180" selection-start-line="283" selection-start-column="180" selection-end-line="283" selection-end-column="180" />
+        <state relative-caret-position="692">
+          <caret line="376" column="24" selection-start-line="376" selection-start-column="24" selection-end-line="376" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9970#9971#0" expanded="true" />
+            <element signature="e#10001#10002#0" expanded="true" />
+            <element signature="e#10050#10051#0" expanded="true" />
+            <element signature="e#10090#10091#0" expanded="true" />
+            <element signature="e#10150#10151#0" expanded="true" />
+            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#9881#9882#0" expanded="true" />
+            <element signature="e#9931#9932#0" expanded="true" />
+            <element signature="e#10390#10391#0" expanded="true" />
+            <element signature="e#10431#10432#0" expanded="true" />
+            <element signature="e#10502#10503#0" expanded="true" />
+            <element signature="e#10554#10555#0" expanded="true" />
+            <element signature="e#11790#11791#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
           </folding>
         </state>
       </provider>
