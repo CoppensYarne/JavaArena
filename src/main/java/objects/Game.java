@@ -112,14 +112,39 @@ public class Game {
             boolean positionTaken;
 
             ArrayList<Integer> toTryPositions = new ArrayList<Integer>() {{
-                add(toTryPosition + 1);
-                add(toTryPosition + arena.getLength());
-                add(toTryPosition - 1);
-                add(toTryPosition - arena.getLength());
-                add(toTryPosition - arena.getLength() + 1);
-                add(toTryPosition - arena.getLength() - 1);
-                add(toTryPosition + arena.getLength() + 1);
-                add(toTryPosition + arena.getLength() - 1);
+                if (character.getPosition() % arena.getLength() != 0) {
+                    add(toTryPosition + 1);
+                }
+
+                if((character.getPosition() + 1) % arena.getLength() != 0){
+                    add(toTryPosition - 1);
+                }
+
+                if(character.getPosition() < arena.getSquares() - arena.getLength()){
+                    add(toTryPosition + arena.getLength());
+
+                    if((toTryPosition + arena.getLength()) % arena.getLength() != 0){
+                        add(toTryPosition - arena.getLength() + 1);
+                    }
+
+                    if((toTryPosition + arena.getLength() + 1) % arena.getLength() != 0){
+                        add(toTryPosition - arena.getLength() - 1);
+                    }
+
+                }
+
+                if(character.getPosition() > arena.getLength()){
+                    add(toTryPosition - arena.getLength());
+
+                    if((toTryPosition - arena.getLength()) % arena.getLength() != 0){
+                        add(toTryPosition - arena.getLength() + 1);
+                    }
+
+                    if((toTryPosition - arena.getLength() + 1) % arena.getLength() != 0){
+                        add(toTryPosition - arena.getLength() - 1);
+                    }
+
+                }
             }};
 
             Collections.shuffle(toTryPositions);
@@ -133,9 +158,7 @@ public class Game {
                 }
 
                 if (!(newPosition < 0) && !(newPosition >= arena.getSquares()) && !(positionTaken)) {
-                    if (!(character.getPosition() % arena.getLength() == 0 && newPosition - 1 == character.getPosition()) || !((character.getPosition() - 1)%arena.getLength()==0 && newPosition + 1 == character.getPosition())) {
-                        character.setPosition(newPosition);
-                    }
+                    character.setPosition(newPosition);
                 }
             }
         }
