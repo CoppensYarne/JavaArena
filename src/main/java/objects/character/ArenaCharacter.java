@@ -60,6 +60,14 @@ public class ArenaCharacter implements ArenaObject {
         this.killAmount = killAmount;
     }
 
+    public ArrayList<String> getKillList() {
+        return killList;
+    }
+
+    public void setKillList(ArrayList<String> killList) {
+        this.killList = killList;
+    }
+
     public Gender getGender() {
         return gender;
     }
