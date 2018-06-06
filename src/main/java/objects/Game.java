@@ -179,6 +179,9 @@ public class Game {
             ArrayList<ArenaCharacter> charactersToAttack = new ArrayList<>(cr.getAllCharacters());
             Collections.shuffle(charactersToAttack);
 
+            moveCharactersRandom();
+
+
             for (ArenaCharacter character : allCharacters) {
                 for (Weapon weapon : allWeapons) {
                     if (weapon.getPosition() == character.getPosition()) {
@@ -188,7 +191,6 @@ public class Game {
                 }
             }
 
-            moveCharactersRandom();
 
             toReturnString += attackAdjacentCharacters();
 

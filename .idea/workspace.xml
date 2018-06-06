@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +29,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weapons.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weapons.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="147" column="35" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+            <state relative-caret-position="610">
+              <caret line="156" column="22" lean-forward="true" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getTor</find>
       <find>getName</find>
       <find>getrandom</find>
       <find>getPosit</find>
@@ -80,6 +91,7 @@
       <find>isGame</find>
       <find>nextturn</find>
       <find>attack</find>
+      <find>nextTurn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,11 +135,11 @@
         <option value="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Finger.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/limbs/Torso.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/item/weapon/Weapon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/objects/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/arena/Types.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" />
+        <option value="$PROJECT_DIR$/src/main/java/objects/Game.java" />
       </list>
     </option>
   </component>
@@ -773,16 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-753">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -806,8 +808,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="147" column="35" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        <state relative-caret-position="610">
+          <caret line="156" column="22" lean-forward="true" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
