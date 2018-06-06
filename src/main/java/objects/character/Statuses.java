@@ -8,6 +8,7 @@ public enum Statuses {
     FROZEN("Frozen"),
     BURNING("Burning"),
     BLINDED("Blinded"),
+    BEDAZZLED("Bedazzled"),
     NONE("Healthy");
 
     private String name;

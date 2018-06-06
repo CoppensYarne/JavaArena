@@ -145,7 +145,7 @@
 	  "presentVerb": "Fancily Shoot",
 	  "damage": 6,
 	  "durability": 3,
-	  "toInflictStatus": "BLEEDING",
+	  "toInflictStatus": "BEDAZZLED",
 	  "range": 4,
 	  "accuracy": 40
 	},
