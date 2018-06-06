@@ -275,13 +275,13 @@ public class ArenaCharacter implements ArenaObject {
 
 
         toReturnString += defendingCharacter.takeDamage(toDealDamage, actualHitLimb);
-        if (this.currentWeapon.getToInflictStatus() != objects.character.Statuses.NONE) {
+        if (this.currentWeapon.getToInflictStatus() != Statuses.NONE) {
             if (this.currentWeapon.getToInflictStatus() == Statuses.BLINDED) {
                 if (actualHitLimb instanceof Eye) {
                     toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
                     actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
                 }else{
-                    toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
+                    toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BURNING + ".";
                     actualHitLimb.addStatus(Statuses.BURNING);
                 }
             } else {
@@ -289,7 +289,7 @@ public class ArenaCharacter implements ArenaObject {
                 actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
             }
         }else if(actualHitLimb instanceof Eye){
-            toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
+            toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BLINDED + ".";
             actualHitLimb.addStatus(Statuses.BLINDED);
         }
 
