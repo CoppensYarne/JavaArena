@@ -2,7 +2,12 @@ package objects.character;
 
 public enum Statuses {
 
-    BLEEDING("Bleeding"), POISONED("Poisoned"), PREGNANT("Pregnant"), FROZEN("Frozen"), NONE("Healthy");
+    BLEEDING("Bleeding"),
+    POISONED("Poisoned"),
+    PREGNANT("Pregnant"),
+    FROZEN("Frozen"),
+    BURNING("Burning"),
+    NONE("Healthy");
 
     private String name;
 

@@ -7,50 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/Limb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/Limb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/Torso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/Torso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Arm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Arm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Leg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Leg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Neck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/Neck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Finger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Finger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Thumb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Thumb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/legComps/Foot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/legComps/Foot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/legComps/footComps/Toe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/legComps/footComps/Toe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Ear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Ear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Eye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Eye.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Mouth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Mouth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Nose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Nose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/item/weapon/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/item/weapon/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/server/Mister_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/server/Mister_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaArena-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaArena-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaArena-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaArena-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsonFiles/weapons.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsonFiles/weapons.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/ArenaCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/ArenaCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/Limb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/Limb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/Torso.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/Torso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Arm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Arm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Leg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Leg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Neck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/Neck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/Hand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/Hand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/handComps/Finger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/handComps/Finger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/handComps/Thumb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/armComps/handComps/Thumb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/legComps/Foot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/legComps/Foot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/legComps/footComps/Toe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/legComps/footComps/Toe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Ear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Ear.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Eye.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Eye.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Mouth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Mouth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Nose.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/character/limbs/torsoComps/neckComps/headComps/Nose.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/item/weapon/Weapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/item/weapon/Weapon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/objects/server/Mister_Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objects/server/Mister_Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,25 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mouth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Mouth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Nose.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/neckComps/headComps/Nose.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,13 +101,22 @@
       <file leaf-file-name="ArenaCharacter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="214" column="29" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+            <state relative-caret-position="251">
+              <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3323#3324#0" expanded="true" />
                 <element signature="e#3357#3358#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statuses.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/Statuses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -249,7 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>generate</find>
       <find>acquireAllW</find>
       <find>toSTring</find>
       <find>move</find>
@@ -279,6 +227,7 @@
       <find>tojson</find>
       <find>getDama</find>
       <find>attack</find>
+      <find>lost</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -288,7 +237,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/objects/item/weapon/Types.java" />
-        <option value="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/arenaObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/ArenaObjectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" />
@@ -325,6 +273,7 @@
         <option value="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Thumb.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/limbs/torsoComps/armComps/handComps/Finger.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/limbs/Torso.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" />
       </list>
     </option>
@@ -666,11 +615,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.21145834" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.25929862" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.25929862" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -785,13 +734,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/item/weapon/Types.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/Statuses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="87" selection-start-line="4" selection-start-column="87" selection-end-line="4" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/item/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1222,10 +1164,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/Statuses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="214" column="29" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+        <state relative-caret-position="251">
+          <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3323#3324#0" expanded="true" />

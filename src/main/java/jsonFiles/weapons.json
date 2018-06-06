@@ -96,15 +96,27 @@
 	  "damage": 2,
 	  "durability": 3,
 	  "toInflictStatus": "NONE",
-	  "range": 1
+	  "range": 1,
+	  "accuracy": 80
 	},
 	{
-	  "name": "Boombox",
-	  "pastVerb": "Deafened",
-	  "presentVerb": "Deafen",
+	  "name": "Ring Of Power",
+	  "pastVerb": "Burned",
+	  "presentVerb": "Burn",
 	  "damage": 8,
+	  "durability": 3,
+	  "toInflictStatus": "BURNING",
+	  "range": 1,
+	  "accuracy": 80
+	},
+	{
+	  "name": "Holy Water",
+	  "pastVerb": "Purified",
+	  "presentVerb": "Purify",
+	  "damage": 6,
 	  "durability": 5,
-	  "toInflictStatus": "NONE",
-	  "range": 3
+	  "toInflictStatus": "BURNING",
+	  "range": 1,
+	  "accuracy": 90
 	}
 ]

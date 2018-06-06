@@ -179,7 +179,7 @@ public class ArenaCharacter implements ArenaObject {
         ArrayList<Limb> newLimbs;
         if (chosenLimb.getCurrentHealth() <= 0) {
             toReturnString += this.name + " lost " + this.gender.getPossession() + " " + chosenLimb + ".";
-            if (chosenLimb == this.torso) {
+            if (chosenLimb.isCritical()) {
                 this.currentHealth = 0;
             } else {
                 if (this.torso.acquireUnderlyingLimbs() != null && this.torso.acquireUnderlyingLimbs().contains(chosenLimb)) {
