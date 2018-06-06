@@ -29,6 +29,8 @@ public class ArenaCharacter implements ArenaObject {
     private Gender gender;
     private Race race;
     private boolean isAi;
+    private int killAmount = 0;
+    private ArrayList<String> killList = new ArrayList<>();
 
     public ArenaCharacter() {
         super();
@@ -48,6 +50,14 @@ public class ArenaCharacter implements ArenaObject {
 
     public Torso getTorso() {
         return torso;
+    }
+
+    public int getKillAmount() {
+        return killAmount;
+    }
+
+    public void setKillAmount(int killAmount) {
+        this.killAmount = killAmount;
     }
 
     public Gender getGender() {
@@ -248,6 +258,12 @@ public class ArenaCharacter implements ArenaObject {
         if (this.currentWeapon.getDurability() <= 0) {
             toReturnString += this.breakWeapon();
         }
+
+        if(defendingCharacter.getCurrentHealth() <= 0){
+            this.killAmount += 1;
+            this.killList.add(defendingCharacter.getName());
+        }
+
         return toReturnString;
     }
 

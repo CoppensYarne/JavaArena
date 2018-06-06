@@ -33,6 +33,7 @@ public class Game {
     private ArrayList<Weapon> allWeapons;
     private String gameEvents;
     private String errorMessage = "";
+    private boolean gameOver = false;
 
     public Game() throws IOException {
         wr = new WeaponRepository();
@@ -213,6 +214,10 @@ public class Game {
 
             //toReturnString = toReturnString.replace(".", ".\n\n");
 
+            if(allCharacters.size() == 1){
+                gameOver = true;
+            }
+
             gameEvents = toReturnString;
             return toReturnString;
         }
@@ -261,15 +266,15 @@ public class Game {
             }
         }
 
-        public boolean isGameOver () {
-            if (allCharacters.size() == 1) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+    public boolean isGameOver() {
+        return gameOver;
+    }
 
-        public ArrayList<ArenaCharacter> getAllCharacters () {
+    public void setGameOver(boolean gameOver) {
+        this.gameOver = gameOver;
+    }
+
+    public ArrayList<ArenaCharacter> getAllCharacters () {
             return allCharacters;
         }
 
