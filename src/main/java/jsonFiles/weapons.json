@@ -63,7 +63,7 @@
 	  "name": "Lightsaber",
 	  "pastVerb": "Sliced",
 	  "presentVerb": "Slice",
-	  "damage": 20,
+	  "damage": 10,
 	  "durability": 8,
 	  "toInflictStatus": "NONE",
 	  "range": 2,
