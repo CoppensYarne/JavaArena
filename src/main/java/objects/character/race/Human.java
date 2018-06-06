@@ -73,7 +73,7 @@ public class Human implements Race {
 
     private Torso getHumanTorso(){
         return new Torso(
-                "Torso", new ArrayList<Neck>() {{add(new Neck("Neck", getHumanHead(), 10));}},
+                "Torso", new ArrayList<Neck>() {{add(new Neck("Neck", getHumanHead(), 70));}},
                 new ArrayList<Arm>() {{
                     add(getHumanLeftArm());
                     add(getHumanRightArm());
@@ -89,8 +89,8 @@ public class Human implements Race {
     private Head getHumanHead(){
         return new Head("Head",
                 new ArrayList<Eye>() {{
-                    add(new Eye("Left eye", 20));
-                    add(new Eye("Right eye", 20));
+                    add(new Eye("Left eye", 10));
+                    add(new Eye("Right eye", 10));
                 }},
                 new ArrayList<Nose>() {{
                     add(new Nose("Nose", 20));
@@ -108,12 +108,12 @@ public class Human implements Race {
 
     private Arm getHumanRightArm(){
         return new Arm(
-                "Right arm", getHumanRightHand(), 20);
+                "Right arm", getHumanRightHand(), 50);
     }
 
     private Arm getHumanLeftArm(){
         return new Arm(
-                "Left arm", getHumanLeftHand(), 20);
+                "Left arm", getHumanLeftHand(), 50);
     }
 
     private Hand getHumanLeftHand(){
@@ -157,7 +157,7 @@ public class Human implements Race {
                     add(new Toe("Right big toe", 10));
                 }},
                 20
-        ),20);
+        ),50);
     }
 
     private Leg getHumanLeftLeg(){
@@ -171,7 +171,7 @@ public class Human implements Race {
             add(new Toe("Left big toe", 10));
         }},
                 20
-        ),20);
+        ),50);
     }
 
     @Override

@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Game.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +27,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ArenaCharacter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3655">
+              <caret line="273" column="77" selection-start-line="273" selection-start-column="77" selection-end-line="273" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="weapons.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+            <state relative-caret-position="3060">
+              <caret line="200" column="38" lean-forward="true" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -463,10 +473,6 @@
           <caret line="106" column="159" selection-start-line="106" selection-start-column="159" selection-end-line="106" selection-end-column="159" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -785,20 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="273" column="77" selection-start-line="273" selection-start-column="77" selection-end-line="273" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/Statuses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -815,8 +807,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+        <state relative-caret-position="3060">
+          <caret line="200" column="38" lean-forward="true" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3655">
+          <caret line="273" column="77" selection-start-line="273" selection-start-column="77" selection-end-line="273" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
