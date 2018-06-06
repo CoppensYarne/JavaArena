@@ -19,7 +19,7 @@ public class Weapon implements Item, ArenaObject {
     private int Accuracy;
     private int Position;
 
-    public Weapon(String name, String pastVerb, String presentVerb, int damage, int range, int durability, Statuses toInflictStatus) {
+    public Weapon(String name, String pastVerb, String presentVerb, int damage, int range, int accuracy, int durability, Statuses toInflictStatus) {
         this.Name = name;
         this.PastVerb = pastVerb;
         this.PresentVerb = presentVerb;
@@ -27,6 +27,7 @@ public class Weapon implements Item, ArenaObject {
         this.ToInflictStatus = toInflictStatus;
         this.Damage = damage;
         this.Range = range;
+        this.Accuracy = accuracy;
     }
 
     public Weapon(){

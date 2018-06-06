@@ -17,7 +17,7 @@ import java.util.Random;
 @JsonDeserialize(using = ArenaCharacterDeserializer.class)
 public class ArenaCharacter implements ArenaObject {
 
-    Weapon fists = new Weapon("Fists", "punched", "punch", 1, 1, 999, objects.character.Statuses.NONE);
+    Weapon fists = new Weapon("Fists", "punched", "punch", 1, 1, 90, 999, objects.character.Statuses.NONE);
     private String name;
     private int currentHealth;
     private int maxHealth;
