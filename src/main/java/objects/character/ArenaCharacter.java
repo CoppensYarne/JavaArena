@@ -239,6 +239,22 @@ public class ArenaCharacter implements ArenaObject {
             isHit = true;
         }
 
+        if(this.getCurrentWeapon().getToInflictStatus() == Statuses.BLINDED){
+            //Gets random eye, can be made better
+            Eye eye1 =  (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0);
+            Eye eye2 =  (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(1);
+            Random randomEye = new Random();
+            int randomEyeIndex = randomEye.nextInt(2);
+            
+            switch(randomEyeIndex){
+                case 0:
+                    targetedLimb = eye1;
+                    break;
+                case 1:
+                    targetedLimb = eye2;
+            }
+        }
+
         Limb actualHitLimb;
 
         if (isHit) {
