@@ -7,6 +7,7 @@ public enum Statuses {
     PREGNANT("Pregnant"),
     FROZEN("Frozen"),
     BURNING("Burning"),
+    BLINDED("Blinded"),
     NONE("Healthy");
 
     private String name;

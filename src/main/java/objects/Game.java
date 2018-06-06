@@ -179,17 +179,6 @@ public class Game {
             Collections.shuffle(charactersToAttack);
 
             for (ArenaCharacter character : allCharacters) {
-                for (Limb limb : character.getTorso().acquireUnderlyingLimbs()) {
-                    if (limb.getStatuses().contains(Statuses.BLEEDING)) {
-                        toReturnString += character.takeDamage(5, limb);
-                    }
-                    if (limb.getStatuses().contains(Statuses.POISONED)) {
-                        toReturnString += character.takeDamage(10, limb);
-                    }
-                }
-            }
-
-            for (ArenaCharacter character : allCharacters) {
                 for (Weapon weapon : allWeapons) {
                     if (weapon.getPosition() == character.getPosition()) {
                         toReturnString += character.equipWeapon(weapon);
