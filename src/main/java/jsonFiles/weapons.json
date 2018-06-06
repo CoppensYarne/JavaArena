@@ -142,7 +142,7 @@
 	{
 	  "name": "Glitter Bow",
 	  "pastVerb": "Fancily Shot",
-	  "presentVerb": "Fancily shoot",
+	  "presentVerb": "Fancily Shoot",
 	  "damage": 6,
 	  "durability": 3,
 	  "toInflictStatus": "BLEEDING",
