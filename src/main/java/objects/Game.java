@@ -189,6 +189,15 @@ public class Game {
                 }
             }
 
+            for (ArenaCharacter character : allCharacters) {
+                for (Weapon weapon : allWeapons) {
+                    if (weapon.getPosition() == character.getPosition()) {
+                        toReturnString += character.equipWeapon(weapon);
+                        weapon.setPosition(arena.getSquares() + 1);
+                    }
+                }
+            }
+
             moveCharactersRandom();
 
             toReturnString += attackAdjacentCharacters();
@@ -209,15 +218,6 @@ public class Game {
                     deadCharacter.getCurrentWeapon().setPosition(characterPosition);
                 }
                 allCharacters.remove(deadCharacter);
-            }
-
-            for (ArenaCharacter character : allCharacters) {
-                for (Weapon weapon : allWeapons) {
-                    if (weapon.getPosition() == character.getPosition()) {
-                        toReturnString += character.equipWeapon(weapon);
-                        weapon.setPosition(arena.getSquares() + 1);
-                    }
-                }
             }
 
             updateArena();
