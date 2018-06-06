@@ -133,7 +133,7 @@ public class Game {
                 }
 
                 if (!(newPosition < 0) && !(newPosition >= arena.getSquares()) && !(positionTaken)) {
-                    if (!(character.getPosition() % arena.getLength() == 0 && newPosition - 1 == character.getPosition())) {
+                    if (!(character.getPosition() % arena.getLength() == 0 && newPosition - 1 == character.getPosition()) || !((character.getPosition() - 1)%arena.getLength()==0 && newPosition + 1 == character.getPosition())) {
                         character.setPosition(newPosition);
                     }
                 }

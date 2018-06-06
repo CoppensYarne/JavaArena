@@ -74,8 +74,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+            <state relative-caret-position="570">
+              <caret line="135" column="225" selection-start-line="135" selection-start-column="225" selection-end-line="135" selection-end-column="225" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9970#9971#0" expanded="true" />
@@ -882,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+        <state relative-caret-position="570">
+          <caret line="135" column="225" selection-start-line="135" selection-start-column="225" selection-end-line="135" selection-end-column="225" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9970#9971#0" expanded="true" />
