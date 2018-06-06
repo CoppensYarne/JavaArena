@@ -1,5 +1,5 @@
 package objects.arena;
 
 public enum Types {
-    DESERT, FOREST
+    DESERT, FOREST, ICE
 }

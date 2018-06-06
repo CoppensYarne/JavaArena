@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import objects.ArenaObject;
 import objects.character.limbs.Limb;
 import objects.character.limbs.Torso;
+import objects.character.limbs.torsoComps.neckComps.headComps.Eye;
 import objects.character.race.Race;
 import objects.item.Item;
 import objects.item.weapon.Weapon;
@@ -234,15 +235,15 @@ public class ArenaCharacter implements ArenaObject {
 
         int randomNumber = random.nextInt(100);
 
-        if(changeToHit > randomNumber){
+        if (changeToHit > randomNumber) {
             isHit = true;
         }
 
         Limb actualHitLimb;
 
-        if(isHit) {
+        if (isHit) {
             actualHitLimb = defendingCharacter.acquireRandomLimb(targetedLimb);
-        }else{
+        } else {
             actualHitLimb = targetedLimb;
         }
 
@@ -259,15 +260,26 @@ public class ArenaCharacter implements ArenaObject {
 
         toReturnString += defendingCharacter.takeDamage(toDealDamage, actualHitLimb);
         if (this.currentWeapon.getToInflictStatus() != objects.character.Statuses.NONE) {
+            if (this.currentWeapon.getToInflictStatus() == Statuses.BLINDED) {
+                if (actualHitLimb instanceof Eye) {
+                    toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
+                    actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
+                }
+            } else {
+                toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
+                actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
+            }
+        }else if(actualHitLimb instanceof Eye){
             toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
             actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
         }
+
         this.currentWeapon.loseDurability();
         if (this.currentWeapon.getDurability() <= 0) {
             toReturnString += this.breakWeapon();
         }
 
-        if(defendingCharacter.getCurrentHealth() <= 0){
+        if (defendingCharacter.getCurrentHealth() <= 0) {
             this.killAmount += 1;
             this.killList.add(defendingCharacter.getName());
         }
