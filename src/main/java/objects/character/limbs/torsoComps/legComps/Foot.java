@@ -13,12 +13,34 @@ public class Foot implements Limb {
     private int currentHealth;
     private int maxHealth;
     private ArrayList<Statuses> statuses = new ArrayList<>();
+    private int damageMultiplier = 2;
+    private boolean critical = false;
 
     public Foot(String name, ArrayList<Toe> toes, int maxHealth) {
         this.name = name;
         this.toes = toes;
         this.currentHealth = maxHealth;
         this.maxHealth = maxHealth;
+    }
+
+    @Override
+    public int getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    @Override
+    public void setDamageMultiplier(int damageMultiplier) {
+        this.damageMultiplier = damageMultiplier;
+    }
+
+    @Override
+    public boolean isCritical() {
+        return critical;
+    }
+
+    @Override
+    public void setCritical(boolean critical) {
+        this.critical = critical;
     }
 
     @Override

@@ -6,7 +6,8 @@
 	  "damage": 10,
 	  "durability": 10,
 	  "toInflictStatus": "BLEEDING",
-	  "range": 1
+	  "range": 1,
+	  "accuracy": 60
 	},
 	{
 	  "name": "Snake",
@@ -15,7 +16,8 @@
 	  "damage": 8,
 	  "durability": 5,
 	  "toInflictStatus": "POISONED",
-	  "range": 3
+	  "range": 3,
+	  "accuracy": 40
 	},
 	{
 	  "name": "Wooden stick",
@@ -24,7 +26,8 @@
 	  "damage": 5,
 	  "durability": 4,
 	  "toInflictStatus": "NONE",
-	  "range": 1
+	  "range": 1,
+	  "accuracy": 70
 	},
 	{
 	  "name": "Rock",

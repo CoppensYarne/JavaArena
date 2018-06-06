@@ -13,6 +13,8 @@ public class Arm implements Limb {
     int currentHealth;
     private ArrayList<Statuses> statuses = new ArrayList<>();
     int maxHealth;
+    private int damageMultiplier = 3;
+    private boolean critical = false;
 
     public Arm(String name, Hand hand, int maxHealth) {
         this.name = name;
@@ -23,6 +25,26 @@ public class Arm implements Limb {
 
     public Hand getHand(){
         return hand;
+    }
+
+    @Override
+    public int getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    @Override
+    public void setDamageMultiplier(int damageMultiplier) {
+        this.damageMultiplier = damageMultiplier;
+    }
+
+    @Override
+    public boolean isCritical() {
+        return critical;
+    }
+
+    @Override
+    public void setCritical(boolean critical) {
+        this.critical = critical;
     }
 
     @Override

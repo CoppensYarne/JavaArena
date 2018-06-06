@@ -16,6 +16,8 @@ public class Torso implements Limb {
     private ArrayList<Leg> legs;
     private int currentHealth;
     private int maxHealth;
+    private int damageMultiplier = 3;
+    private boolean critical = true;
 
     public Torso(String name, ArrayList<Neck> neck, ArrayList<Arm> arms, ArrayList<Leg> legs, int maxHealth) {
         this.name = name;
@@ -24,6 +26,26 @@ public class Torso implements Limb {
         this.legs = legs;
         this.currentHealth = maxHealth;
         this.maxHealth = maxHealth;
+    }
+
+    @Override
+    public int getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    @Override
+    public void setDamageMultiplier(int damageMultiplier) {
+        this.damageMultiplier = damageMultiplier;
+    }
+
+    @Override
+    public boolean isCritical() {
+        return critical;
+    }
+
+    @Override
+    public void setCritical(boolean critical) {
+        this.critical = critical;
     }
 
     @Override

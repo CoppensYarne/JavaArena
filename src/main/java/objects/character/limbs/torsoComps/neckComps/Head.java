@@ -19,6 +19,8 @@ public class Head implements Limb {
     int currentHealth;
     int maxHealth;
     private ArrayList<Statuses> statuses = new ArrayList<>();
+    private int damageMultiplier = 5;
+    private boolean critical = true;
 
     public Head(String name, ArrayList<Eye> eyes, ArrayList<Nose> noses, ArrayList<Ear> ears, ArrayList<Mouth> mouths, int maxHealth) {
         this.name = name;
@@ -28,6 +30,27 @@ public class Head implements Limb {
         this.mouths = mouths;
         this.currentHealth = maxHealth;
         this.maxHealth = maxHealth;
+    }
+
+
+    @Override
+    public int getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    @Override
+    public void setDamageMultiplier(int damageMultiplier) {
+        this.damageMultiplier = damageMultiplier;
+    }
+
+    @Override
+    public boolean isCritical() {
+        return critical;
+    }
+
+    @Override
+    public void setCritical(boolean critical) {
+        this.critical = critical;
     }
 
     @Override

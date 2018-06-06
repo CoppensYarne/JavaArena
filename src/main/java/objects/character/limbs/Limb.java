@@ -25,4 +25,11 @@ public interface Limb {
 
     String acquireFullInfo();
 
+    int getDamageMultiplier();
+
+    void setDamageMultiplier(int damageMultiplier);
+
+    void setCritical(boolean critical);
+    boolean isCritical();
+
 }

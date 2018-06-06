@@ -16,6 +16,7 @@ public class Weapon implements Item, ArenaObject {
     private Statuses ToInflictStatus;
     private int Damage;
     private int Range;
+    private int Accuracy;
     private int Position;
 
     public Weapon(String name, String pastVerb, String presentVerb, int damage, int range, int durability, Statuses toInflictStatus) {
@@ -30,6 +31,14 @@ public class Weapon implements Item, ArenaObject {
 
     public Weapon(){
         super();
+    }
+
+    public int getAccuracy() {
+        return Accuracy;
+    }
+
+    public void setAccuracy(int accuracy) {
+        Accuracy = accuracy;
     }
 
     public String getPresentVerb() {

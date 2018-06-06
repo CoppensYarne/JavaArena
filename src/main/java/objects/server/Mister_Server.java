@@ -1,5 +1,7 @@
 package objects.server;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.Context;
 import io.javalin.Javalin;
 import objects.Game;
@@ -28,6 +30,15 @@ public class Mister_Server {
         server.post("/API/StartGame", this::StartGame);
         server.post("/API/NextTurn", this::nextTurn);
         server.post("/API/ObjectInfo", this::objectInfo);
+        server.post("/API/ArenaInfo", this::arenaInfo);
+    }
+
+
+    private void arenaInfo(Context context) throws JsonProcessingException {
+        String ownerName = new JSONObject(context.body()).getString("owner");
+        ObjectMapper mapper = new ObjectMapper();
+        String arena = mapper.writeValueAsString(gr.getGameByOwnerName(ownerName).getArena());
+        context.json(arena);
     }
 
 

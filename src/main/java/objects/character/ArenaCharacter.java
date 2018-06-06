@@ -209,18 +209,37 @@ public class ArenaCharacter implements ArenaObject {
     public String attack(ArenaCharacter defendingCharacter, Limb targetedLimb) {
         String toReturnString = "";
 
-        Limb actualHitLimb = defendingCharacter.acquireRandomLimb(targetedLimb);
+        Random random = new Random();
+        int changeToHit = this.getCurrentWeapon().getAccuracy();
+
+        boolean isHit = false;
+
+        int randomNumber = random.nextInt(100);
+
+        if(changeToHit > randomNumber){
+            isHit = true;
+        }
+
+        Limb actualHitLimb;
+
+        if(isHit) {
+            actualHitLimb = defendingCharacter.acquireRandomLimb(targetedLimb);
+        }else{
+            actualHitLimb = targetedLimb;
+        }
+
+        int toDealDamage = this.currentWeapon.getDamage() * actualHitLimb.getDamageMultiplier();
 
         if (actualHitLimb == targetedLimb) {
             toReturnString += this.name + " " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() +
-                    " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + ".";
+                    " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " for " + toDealDamage + " damage.";
         } else {
             toReturnString += this.name + " wanted to " + this.currentWeapon.getPresentVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + targetedLimb.getName() + " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " but missed" +
-                    " and " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " instead.";
+                    " and " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " instead" + " for " + toDealDamage + " damage.";
         }
 
 
-        toReturnString += defendingCharacter.takeDamage(this.currentWeapon.getDamage(), actualHitLimb);
+        toReturnString += defendingCharacter.takeDamage(toDealDamage, actualHitLimb);
         if (this.currentWeapon.getToInflictStatus() != objects.character.Statuses.NONE) {
             toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
             actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());

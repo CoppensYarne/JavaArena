@@ -13,6 +13,8 @@ public class Neck implements Limb {
     private ArrayList<Statuses> statuses = new ArrayList<>();
     int currentHealth;
     int maxHealth;
+    private int damageMultiplier = 5;
+    private boolean critical = true;
 
     public Neck(String name, Head head, int maxHealth) {
         this.name = name;
@@ -23,6 +25,27 @@ public class Neck implements Limb {
 
     public Head getHead(){
         return head;
+    }
+
+
+    @Override
+    public boolean isCritical() {
+        return critical;
+    }
+
+    @Override
+    public void setCritical(boolean critical) {
+        this.critical = critical;
+    }
+
+    @Override
+    public int getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    @Override
+    public void setDamageMultiplier(int damageMultiplier) {
+        this.damageMultiplier = damageMultiplier;
     }
 
     @Override
