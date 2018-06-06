@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +30,15 @@
       <file leaf-file-name="ArenaCharacter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="442">
+              <caret line="83" column="17" lean-forward="true" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1448#1449#0" expanded="true" />
                 <element signature="e#1481#1482#0" expanded="true" />
                 <element signature="e#1530#1531#0" expanded="true" />
                 <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="e#1688#1689#0" expanded="true" />
                 <element signature="e#1719#1720#0" expanded="true" />
                 <element signature="e#1778#1779#0" expanded="true" />
                 <element signature="e#1818#1819#0" expanded="true" />
@@ -591,7 +590,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -676,6 +674,7 @@
             <element signature="e#1481#1482#0" expanded="true" />
             <element signature="e#1530#1531#0" expanded="true" />
             <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
             <element signature="e#1719#1720#0" expanded="true" />
             <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#1818#1819#0" expanded="true" />
@@ -1049,14 +1048,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="442">
+          <caret line="83" column="17" lean-forward="true" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1448#1449#0" expanded="true" />
             <element signature="e#1481#1482#0" expanded="true" />
             <element signature="e#1530#1531#0" expanded="true" />
             <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
             <element signature="e#1719#1720#0" expanded="true" />
             <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#1818#1819#0" expanded="true" />
