@@ -236,7 +236,7 @@
 		"damage": 0,
 		"durability": 1,
 		"toInflictStatus": "MARRIED",
-		"range": 1
+		"range": 1,
 		"accuracy": 100
 	}
 ]
