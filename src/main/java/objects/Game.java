@@ -212,12 +212,25 @@ public class Game {
         for (ArenaCharacter character : allCharacters) {
             for (Weapon weapon : allWeapons) {
                 if (weapon.getPosition() == character.getPosition()) {
-                    toReturnString += character.equipWeapon(weapon);
+                    if(character.getCurrentWeapon().getName().equals("Fists")) {
+                        toReturnString += character.equipWeapon(weapon);
+                    }else{
+                        toReturnString += character.putInInventory(weapon);
+                    }
                     weapon.setPosition(arena.getSquares() + 1);
                 }
             }
         }
 
+
+        for(ArenaCharacter character : allCharacters){
+            if(character.getCurrentWeapon().getName().equals("Fists") && character.getInventory().size() != 0){
+                if(character.getInventory().get(0) instanceof Weapon){
+                    Weapon toEquipWeapon = (Weapon) character.getInventory().get(0);
+                    character.equipFromInventory(toEquipWeapon);
+                }
+            }
+        }
 
         toReturnString += attackAdjacentCharacters();
 

@@ -352,6 +352,19 @@ public class ArenaCharacter implements ArenaObject {
         return randomLimb;
     }
 
+    public String putInInventory(Weapon weapon){
+        this.inventory.add(weapon);
+        return this.name + " put a " + weapon.getName() + " in " + gender.getPossession() + " inventory.";
+    }
+
+    public String equipFromInventory(Weapon weapon){
+        this.inventory.remove(weapon);
+        this.currentWeapon = weapon;
+        return this.name + " equipped " + weapon.getName() + " from " + gender.getPossession() + " inventory.";
+    }
+
+
+
     public String acquireFullInfo() {
         String toReturnString = "";
 
