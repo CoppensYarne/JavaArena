@@ -228,79 +228,91 @@ public class ArenaCharacter implements ArenaObject {
     public String attack(ArenaCharacter defendingCharacter, Limb targetedLimb) {
         String toReturnString = "";
 
-        Random random = new Random();
-        int changeToHit = this.getCurrentWeapon().getAccuracy();
+        if(!(this.currentWeapon.getToInflictStatus() == Statuses.MARRIED)) {
 
-        boolean isHit = false;
+            Random random = new Random();
+            int changeToHit = this.getCurrentWeapon().getAccuracy();
 
-        int randomNumber = random.nextInt(100);
+            boolean isHit = false;
 
-        if (changeToHit > randomNumber) {
-            isHit = true;
-        }
+            int randomNumber = random.nextInt(100);
 
-        if(this.getCurrentWeapon().getToInflictStatus() == Statuses.BLINDED){
-            //Gets random eye, can be made better
-            Eye eye1 =  (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0);
-            Eye eye2 =  (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(1);
-            Random randomEye = new Random();
-            int randomEyeIndex = randomEye.nextInt(2);
-
-            switch(randomEyeIndex){
-                case 0:
-                    targetedLimb = eye1;
-                    break;
-                case 1:
-                    targetedLimb = eye2;
+            if (changeToHit > randomNumber) {
+                isHit = true;
             }
-        }
 
-        Limb actualHitLimb;
+            if (this.getCurrentWeapon().getToInflictStatus() == Statuses.BLINDED) {
+                //Gets random eye, can be made better
+                Eye eye1 = (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0);
+                Eye eye2 = (Eye) defendingCharacter.getTorso().acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(0).acquireUnderlyingLimbs().get(1);
+                Random randomEye = new Random();
+                int randomEyeIndex = randomEye.nextInt(2);
 
-        if (isHit) {
-            actualHitLimb = defendingCharacter.acquireRandomLimb(targetedLimb);
-        } else {
-            actualHitLimb = targetedLimb;
-        }
+                switch (randomEyeIndex) {
+                    case 0:
+                        targetedLimb = eye1;
+                        break;
+                    case 1:
+                        targetedLimb = eye2;
+                }
+            }
 
-        int toDealDamage = this.currentWeapon.getDamage() * actualHitLimb.getDamageMultiplier();
+            Limb actualHitLimb;
 
-        if (actualHitLimb == targetedLimb) {
-            toReturnString += this.name + " " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() +
-                    " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " for " + toDealDamage + " damage.";
-        } else {
-            toReturnString += this.name + " wanted to " + this.currentWeapon.getPresentVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + targetedLimb.getName() + " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " but missed" +
-                    " and " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " instead" + " for " + toDealDamage + " damage.";
-        }
+            if (isHit) {
+                actualHitLimb = defendingCharacter.acquireRandomLimb(targetedLimb);
+            } else {
+                actualHitLimb = targetedLimb;
+            }
+
+            int toDealDamage = this.currentWeapon.getDamage() * actualHitLimb.getDamageMultiplier();
+
+            if (actualHitLimb == targetedLimb) {
+                toReturnString += this.name + " " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() +
+                        " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " for " + toDealDamage + " damage.";
+            } else {
+                toReturnString += this.name + " wanted to " + this.currentWeapon.getPresentVerb() + " " + defendingCharacter.getName() + " in " + defendingCharacter.getGender().getPossession() + " " + targetedLimb.getName() + " with " + this.getGender().getPossession() + " " + this.currentWeapon.getName() + " but missed" +
+                        " and " + this.currentWeapon.getPastVerb() + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " instead" + " for " + toDealDamage + " damage.";
+            }
 
 
-        toReturnString += defendingCharacter.takeDamage(toDealDamage, actualHitLimb);
-        if (this.currentWeapon.getToInflictStatus() != Statuses.NONE) {
-            if (this.currentWeapon.getToInflictStatus() == Statuses.BLINDED) {
-                if (actualHitLimb instanceof Eye) {
+            toReturnString += defendingCharacter.takeDamage(toDealDamage, actualHitLimb);
+            if (this.currentWeapon.getToInflictStatus() != Statuses.NONE) {
+                if (this.currentWeapon.getToInflictStatus() == Statuses.BLINDED) {
+                    if (actualHitLimb instanceof Eye) {
+                        toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
+                        actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
+                    } else {
+                        toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BURNING + ".";
+                        actualHitLimb.addStatus(Statuses.BURNING);
+                    }
+                } else {
                     toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
                     actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
-                }else{
-                    toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BURNING + ".";
-                    actualHitLimb.addStatus(Statuses.BURNING);
                 }
-            } else {
-                toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + this.currentWeapon.getToInflictStatus() + ".";
-                actualHitLimb.addStatus(this.currentWeapon.getToInflictStatus());
+            } else if (actualHitLimb instanceof Eye) {
+                toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BLINDED + ".";
+                actualHitLimb.addStatus(Statuses.BLINDED);
             }
-        }else if(actualHitLimb instanceof Eye){
-            toReturnString += defendingCharacter.name + " " + defendingCharacter.getGender().getPossession() + " " + actualHitLimb.getName() + " is now " + Statuses.BLINDED + ".";
-            actualHitLimb.addStatus(Statuses.BLINDED);
-        }
 
-        this.currentWeapon.loseDurability();
-        if (this.currentWeapon.getDurability() <= 0) {
-            toReturnString += this.breakWeapon();
-        }
+            this.currentWeapon.loseDurability();
+            if (this.currentWeapon.getDurability() <= 0) {
+                toReturnString += this.breakWeapon();
+            }
 
-        if (defendingCharacter.getCurrentHealth() <= 0) {
-            this.killAmount += 1;
-            this.killList.add(defendingCharacter.getName());
+            if (defendingCharacter.getCurrentHealth() <= 0) {
+                this.killAmount += 1;
+                this.killList.add(defendingCharacter.getName());
+            }
+
+        }else{
+            toReturnString += this.name + " got married to " + defendingCharacter.getName() + ".";
+            ArrayList<Statuses> newStatusesAttacker = this.torso.getStatuses();
+            ArrayList<Statuses> newStatusesDefender = defendingCharacter.getTorso().getStatuses();
+            newStatusesAttacker.add(Statuses.MARRIED);
+            newStatusesDefender.add(Statuses.MARRIED);
+            this.torso.setStatuses(newStatusesAttacker);
+            defendingCharacter.getTorso().setStatuses(newStatusesDefender);
         }
 
         return toReturnString;

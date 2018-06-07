@@ -9,6 +9,7 @@ public enum Statuses {
     BURNING("Burning"),
     BLINDED("Blinded"),
     BEDAZZLED("Bedazzled"),
+    MARRIED("Married"),
     NONE("Healthy");
 
     private String name;

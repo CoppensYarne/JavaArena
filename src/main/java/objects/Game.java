@@ -116,31 +116,31 @@ public class Game {
                     add(toTryPosition + 1);
                 }
 
-                if((character.getPosition() + 1) % arena.getLength() != 0){
+                if ((character.getPosition() + 1) % arena.getLength() != 0) {
                     add(toTryPosition - 1);
                 }
 
-                if(character.getPosition() < arena.getSquares() - arena.getLength()){
+                if (character.getPosition() < arena.getSquares() - arena.getLength()) {
                     add(toTryPosition + arena.getLength());
 
-                    if((toTryPosition + arena.getLength()) % arena.getLength() != 0){
+                    if ((toTryPosition + arena.getLength()) % arena.getLength() != 0) {
                         add(toTryPosition - arena.getLength() + 1);
                     }
 
-                    if((toTryPosition + arena.getLength() + 1) % arena.getLength() != 0){
+                    if ((toTryPosition + arena.getLength() + 1) % arena.getLength() != 0) {
                         add(toTryPosition - arena.getLength() - 1);
                     }
 
                 }
 
-                if(character.getPosition() > arena.getLength()){
+                if (character.getPosition() > arena.getLength()) {
                     add(toTryPosition - arena.getLength());
 
-                    if((toTryPosition - arena.getLength()) % arena.getLength() != 0){
+                    if ((toTryPosition - arena.getLength()) % arena.getLength() != 0) {
                         add(toTryPosition - arena.getLength() + 1);
                     }
 
-                    if((toTryPosition - arena.getLength() + 1) % arena.getLength() != 0){
+                    if ((toTryPosition - arena.getLength() + 1) % arena.getLength() != 0) {
                         add(toTryPosition - arena.getLength() - 1);
                     }
 
@@ -184,7 +184,9 @@ public class Game {
             ArrayList<Integer> allAdjacentFilledPositions = new ArrayList<>();
             for (Integer position : allPossiblePositions) {
                 if (arena.isThereCharacterAtPosition(position)) {
-                    allAdjacentFilledPositions.add(position);
+                    if (!(arenaCharacter.getTorso().getStatuses().contains(Statuses.MARRIED) && arena.acquireCharacterAtPosition(position).getTorso().getStatuses().contains(Statuses.MARRIED))) {
+                        allAdjacentFilledPositions.add(position);
+                    }
                 }
             }
             if (allAdjacentFilledPositions.size() != 0) {
@@ -241,7 +243,7 @@ public class Game {
 
         //toReturnString = toReturnString.replace(".", ".\n\n");
 
-        if (allCharacters.size() == 1) {
+        if (allCharacters.size() == 1 || (allCharacters.size() == 2 && (allCharacters.get(0).getTorso().getStatuses().contains(Statuses.MARRIED)&&allCharacters.get(1).getTorso().getStatuses().contains(Statuses.MARRIED)))) {
             gameOver = true;
         }
 

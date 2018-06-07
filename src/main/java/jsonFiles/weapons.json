@@ -228,5 +228,16 @@
 	  "toInflictStatus": "BLEEDING",
 	  "range": 2,
 	  "accuracy": 45
+	},
+	,
+	{
+		"name": "Priest",
+		"pastVerb": "Married",
+		"presentVerb": "Marry",
+		"damage": 0,
+		"durability": 1,
+		"toInflictStatus": "MARRIED",
+		"range": 1
+		"accuracy": 100
 	}
 ]
