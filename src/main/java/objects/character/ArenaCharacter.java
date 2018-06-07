@@ -32,6 +32,7 @@ public class ArenaCharacter implements ArenaObject {
     private boolean isAi;
     private int killAmount = 0;
     private ArrayList<String> killList = new ArrayList<>();
+    private ArrayList<String> killMessages = new ArrayList<>();
 
     public ArenaCharacter() {
         super();
@@ -61,12 +62,24 @@ public class ArenaCharacter implements ArenaObject {
         this.killAmount = killAmount;
     }
 
+    public void addKillMessage(String killMessage){
+        this.killMessages.add(killMessage);
+    }
+
     public ArrayList<String> getKillList() {
         return killList;
     }
 
     public void setKillList(ArrayList<String> killList) {
         this.killList = killList;
+    }
+
+    public ArrayList<String> getKillMessages() {
+        return killMessages;
+    }
+
+    public void setKillMessages(ArrayList<String> killMessages) {
+        this.killMessages = killMessages;
     }
 
     public Gender getGender() {
@@ -298,6 +311,7 @@ public class ArenaCharacter implements ArenaObject {
             if (defendingCharacter.getCurrentHealth() <= 0) {
                 this.killAmount += 1;
                 this.killList.add(defendingCharacter.getName());
+                this.killMessages.add(toReturnString);
             }
 
         }else{
