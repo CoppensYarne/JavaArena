@@ -224,14 +224,19 @@ public class Game {
         toReturnString += "\n";
 
         ArrayList<ArenaCharacter> deadCharacters = acquireNewDeadCharacters();
-        if (deadCharacters.size() != 0) {
-            toReturnString += deadCharacters;
-            toReturnString += "\n";
-        }
 
         for (ArenaCharacter deadCharacter : deadCharacters) {
             toReturnString += deadCharacter.getName() + " died.";
-            toReturnString += "\n";
+
+            if (deadCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
+                for(ArenaCharacter arenaCharacter : allCharacters){
+                    if(arenaCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
+                        arenaCharacter.setCurrentHealth(0);
+                        toReturnString += deadCharacter.getName() + " died of sadness.";
+                    }
+                }
+            }
+
             int characterPosition = deadCharacter.getPosition();
             if (!deadCharacter.getCurrentWeapon().getName().equals("Fists")) {
                 deadCharacter.getCurrentWeapon().setPosition(characterPosition);

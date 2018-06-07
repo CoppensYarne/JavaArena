@@ -295,11 +295,6 @@ public class ArenaCharacter implements ArenaObject {
                 actualHitLimb.addStatus(Statuses.BLINDED);
             }
 
-            this.currentWeapon.loseDurability();
-            if (this.currentWeapon.getDurability() <= 0) {
-                toReturnString += this.breakWeapon();
-            }
-
             if (defendingCharacter.getCurrentHealth() <= 0) {
                 this.killAmount += 1;
                 this.killList.add(defendingCharacter.getName());
@@ -313,6 +308,11 @@ public class ArenaCharacter implements ArenaObject {
             newStatusesDefender.add(Statuses.MARRIED);
             this.torso.setStatuses(newStatusesAttacker);
             defendingCharacter.getTorso().setStatuses(newStatusesDefender);
+
+            this.currentWeapon.loseDurability();
+            if (this.currentWeapon.getDurability() <= 0) {
+                toReturnString += this.breakWeapon();
+            }
         }
 
         return toReturnString;
