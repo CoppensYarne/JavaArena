@@ -121,8 +121,8 @@
 	},
 	{
 	  "name": "Pudding Canon",
-	  "pastVerb": "Shoot",
-	  "presentVerb": "Shot",
+	  "pastVerb": "Shot",
+	  "presentVerb": "Shoot",
 	  "damage": 4,
 	  "durability": 9,
 	  "toInflictStatus": "NONE",

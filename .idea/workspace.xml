@@ -159,7 +159,7 @@
     <findStrings>
       <find>takeD</find>
       <find>getPo</find>
-      <find>new Arena</find>
+      <find />
       <find>acquireAl</find>
       <find>toReturnSt</find>
       <find>&quot;\n</find>
@@ -256,7 +256,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
