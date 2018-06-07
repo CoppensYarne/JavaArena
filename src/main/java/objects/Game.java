@@ -252,6 +252,7 @@ public class Game {
                     }
                 }
                 allCharacters.remove(marriedChar);
+                graveyard.add(marriedChar);
             }
 
             int characterPosition = deadCharacter.getPosition();
