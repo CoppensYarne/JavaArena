@@ -227,7 +227,7 @@ public class Game {
             if(character.getCurrentWeapon().getName().equals("Fists") && character.getInventory().size() != 0){
                 if(character.getInventory().get(0) instanceof Weapon){
                     Weapon toEquipWeapon = (Weapon) character.getInventory().get(0);
-                    character.equipFromInventory(toEquipWeapon);
+                    toReturnString += character.equipFromInventory(toEquipWeapon);
                 }
             }
         }
