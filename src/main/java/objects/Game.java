@@ -244,7 +244,7 @@ public class Game {
             if (deadCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
                 ArenaCharacter marriedChar = null;
                 for(ArenaCharacter arenaCharacter : allCharacters){
-                    if(arenaCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
+                    if(arenaCharacter.getTorso().getStatuses().contains(Statuses.MARRIED) && arenaCharacter != deadCharacter){
                         arenaCharacter.setCurrentHealth(0);
                         toReturnString += arenaCharacter.getName() + " died of sadness.";
                         marriedChar = arenaCharacter;
