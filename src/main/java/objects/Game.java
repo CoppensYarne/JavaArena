@@ -124,11 +124,11 @@ public class Game {
                     add(toTryPosition + arena.getLength());
 
                     if ((toTryPosition + arena.getLength()) % arena.getLength() != 0) {
-                        add(toTryPosition - arena.getLength() + 1);
+                        add(toTryPosition + arena.getLength() + 1);
                     }
 
                     if ((toTryPosition + arena.getLength() + 1) % arena.getLength() != 0) {
-                        add(toTryPosition - arena.getLength() - 1);
+                        add(toTryPosition + arena.getLength() - 1);
                     }
 
                 }
