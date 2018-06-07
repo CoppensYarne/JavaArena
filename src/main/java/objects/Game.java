@@ -229,12 +229,16 @@ public class Game {
             toReturnString += deadCharacter.getName() + " died.";
 
             if (deadCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
+                ArenaCharacter marriedChar = null;
                 for(ArenaCharacter arenaCharacter : allCharacters){
                     if(arenaCharacter.getTorso().getStatuses().contains(Statuses.MARRIED)){
                         arenaCharacter.setCurrentHealth(0);
-                        toReturnString += deadCharacter.getName() + " died of sadness.";
+                        toReturnString += arenaCharacter.getName() + " died of sadness.";
+                        marriedChar = arenaCharacter;
+                        break;
                     }
                 }
+                allCharacters.remove(marriedChar);
             }
 
             int characterPosition = deadCharacter.getPosition();
