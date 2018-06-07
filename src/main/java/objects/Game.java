@@ -157,7 +157,7 @@ public class Game {
                     }
                 }
 
-                if (!(newPosition < 0) && !(newPosition >= arena.getSquares()) && !(positionTaken)) {
+                if (!(newPosition < 0) && !(newPosition > arena.getSquares()) && !(positionTaken)) {
                     character.setPosition(newPosition);
                 }
             }

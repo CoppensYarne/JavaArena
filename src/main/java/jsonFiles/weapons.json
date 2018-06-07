@@ -1,242 +1,242 @@
 [
-	{
-	  "name": "Sword",
-	  "pastVerb": "Slashed",
-	  "presentVerb": "Slash",
-	  "damage": 10,
-	  "durability": 10,
-	  "toInflictStatus": "BLEEDING",
-	  "range": 1,
-	  "accuracy": 60
-	},
-	{
-	  "name": "Snake",
-	  "pastVerb": "Bit",
-	  "presentVerb": "Bite",
-	  "damage": 8,
-	  "durability": 5,
-	  "toInflictStatus": "POISONED",
-	  "range": 3,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Wooden stick",
-	  "pastVerb": "Hit",
-	  "presentVerb": "Hit",
-	  "damage": 5,
-	  "durability": 4,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 70
-	},
-	{
-	  "name": "Rock",
-	  "pastVerb": "Hit",
-	  "presentVerb": "Hit",
-	  "damage": 5,
-	  "durability": 20,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 80
-	},
-	{
-	  "name": "Bow",
-	  "pastVerb": "Shot",
-	  "presentVerb": "Shoot",
-	  "damage": 10,
-	  "durability": 7,
-	  "toInflictStatus": "BLEEDING",
-	  "range": 6,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Freeze ray",
-	  "pastVerb": "Shot",
-	  "presentVerb": "Shoot",
-	  "damage": 9,
-	  "durability": 2,
-	  "toInflictStatus": "FROZEN",
-	  "range": 5,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Lightsaber",
-	  "pastVerb": "Sliced",
-	  "presentVerb": "Slice",
-	  "damage": 10,
-	  "durability": 8,
-	  "toInflictStatus": "NONE",
-	  "range": 2,
-	  "accuracy": 60
-	},
-	{
-	  "name": "Ninja Star",
-	  "pastVerb": "Hit",
-	  "presentVerb": "Hit",
-	  "damage": 8,
-	  "durability": 10,
-	  "toInflictStatus": "BLEEDING",
-	  "range": 5,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Computer",
-	  "pastVerb": "Hacked",
-	  "presentVerb": "Hack",
-	  "damage": 7,
-	  "durability": 10,
-	  "toInflictStatus": "FROZEN",
-	  "range": 5,
-	  "accuracy": 69
-	},
-	{
-	  "name": "Cup",
-	  "pastVerb": "Smashed",
-	  "presentVerb": "Smash",
-	  "damage": 2,
-	  "durability": 3,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 80
-	},
-	{
-	  "name": "Ring Of Power",
-	  "pastVerb": "Burned",
-	  "presentVerb": "Burn",
-	  "damage": 8,
-	  "durability": 3,
-	  "toInflictStatus": "BURNING",
-	  "range": 1,
-	  "accuracy": 80
-	},
-	{
-	  "name": "Holy Water",
-	  "pastVerb": "Purified",
-	  "presentVerb": "Purify",
-	  "damage": 6,
-	  "durability": 5,
-	  "toInflictStatus": "BURNING",
-	  "range": 1,
-	  "accuracy": 90
-	},
-	{
-	  "name": "Pudding Canon",
-	  "pastVerb": "Shot",
-	  "presentVerb": "Shoot",
-	  "damage": 4,
-	  "durability": 9,
-	  "toInflictStatus": "NONE",
-	  "range": 5,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Dwarf Tooth Canon",
-	  "pastVerb": "Shot",
-	  "presentVerb": "Shoot",
-	  "damage": 6,
-	  "durability": 4,
-	  "toInflictStatus": "BLEEDING",
-	  "range": 3,
-	  "accuracy": 60
-	},
-	{
-	  "name": "Glitter Bow",
-	  "pastVerb": "Fancily Shot",
-	  "presentVerb": "Fancily Shoot",
-	  "damage": 6,
-	  "durability": 3,
-	  "toInflictStatus": "BEDAZZLED",
-	  "range": 4,
-	  "accuracy": 40
-	},
-	{
-	  "name": "Exploding Present",
-	  "pastVerb": "Surprised",
-	  "presentVerb": "Surprise",
-	  "damage": 10,
-	  "durability": 1,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 80
-	},
-	{
-	  "name": "Poisonous Spinach",
-	  "pastVerb": "Poisoned",
-	  "presentVerb": "Poison",
-	  "damage": 4,
-	  "durability": 3,
-	  "toInflictStatus": "POISONED",
-	  "range": 1,
-	  "accuracy": 90
-	},
-	{
-	  "name": "Laser Pen",
-	  "pastVerb": "Blinded",
-	  "presentVerb": "Blind",
-	  "damage": 4,
-	  "durability": 10,
-	  "toInflictStatus": "BLINDED",
-	  "range": 9,
-	  "accuracy": 90
-	},
-	{
-	  "name": "Big Shoe",
-	  "pastVerb": "Hit",
-	  "presentVerb": "Hit",
-	  "damage": 4,
-	  "durability": 7,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 80
-	},
-	{
-	  "name": "See-through Tape",
-	  "pastVerb": "Taped",
-	  "presentVerb": "Tape",
-	  "damage": 5,
-	  "durability": 6,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 75
-	},
-	{
-	  "name": "Hundred Strange Men",
-	  "pastVerb": "Scared",
-	  "presentVerb": "Scare",
-	  "damage": 8,
-	  "durability": 2,
-	  "toInflictStatus": "NONE",
-	  "range": 2,
-	  "accuracy": 100
-	},
-	{
-	  "name": "Car Door",
-	  "pastVerb": "Hit",
-	  "presentVerb": "Hit",
-	  "damage": 8,
-	  "durability": 3,
-	  "toInflictStatus": "NONE",
-	  "range": 1,
-	  "accuracy": 35
-	},
-	{
-	  "name": "Broccoli Bomb",
-	  "pastVerb": "Exploded",
-	  "presentVerb": "Explode",
-	  "damage": 10,
-	  "durability": 1,
-	  "toInflictStatus": "BLEEDING",
-	  "range": 2,
-	  "accuracy": 45
-	},
-	{
-		"name": "Priest",
-		"pastVerb": "Married",
-		"presentVerb": "Marry",
-		"damage": 0,
-		"durability": 1,
-		"toInflictStatus": "MARRIED",
-		"range": 1,
-		"accuracy": 100
-	}
+  {
+    "name": "Sword",
+    "pastVerb": "Slashed",
+    "presentVerb": "Slash",
+    "damage": 10,
+    "durability": 10,
+    "toInflictStatus": "BLEEDING",
+    "range": 1,
+    "accuracy": 60
+  },
+  {
+    "name": "Snake",
+    "pastVerb": "Bit",
+    "presentVerb": "Bite",
+    "damage": 8,
+    "durability": 5,
+    "toInflictStatus": "POISONED",
+    "range": 3,
+    "accuracy": 40
+  },
+  {
+    "name": "Wooden stick",
+    "pastVerb": "Hit",
+    "presentVerb": "Hit",
+    "damage": 5,
+    "durability": 4,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 70
+  },
+  {
+    "name": "Rock",
+    "pastVerb": "Hit",
+    "presentVerb": "Hit",
+    "damage": 5,
+    "durability": 20,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 80
+  },
+  {
+    "name": "Bow",
+    "pastVerb": "Shot",
+    "presentVerb": "Shoot",
+    "damage": 10,
+    "durability": 7,
+    "toInflictStatus": "BLEEDING",
+    "range": 6,
+    "accuracy": 40
+  },
+  {
+    "name": "Freeze ray",
+    "pastVerb": "Shot",
+    "presentVerb": "Shoot",
+    "damage": 9,
+    "durability": 2,
+    "toInflictStatus": "FROZEN",
+    "range": 5,
+    "accuracy": 40
+  },
+  {
+    "name": "Lightsaber",
+    "pastVerb": "Sliced",
+    "presentVerb": "Slice",
+    "damage": 10,
+    "durability": 8,
+    "toInflictStatus": "NONE",
+    "range": 2,
+    "accuracy": 60
+  },
+  {
+    "name": "Ninja Star",
+    "pastVerb": "Hit",
+    "presentVerb": "Hit",
+    "damage": 8,
+    "durability": 10,
+    "toInflictStatus": "BLEEDING",
+    "range": 5,
+    "accuracy": 40
+  },
+  {
+    "name": "Computer",
+    "pastVerb": "Hacked",
+    "presentVerb": "Hack",
+    "damage": 7,
+    "durability": 10,
+    "toInflictStatus": "FROZEN",
+    "range": 5,
+    "accuracy": 69
+  },
+  {
+    "name": "Cup",
+    "pastVerb": "Smashed",
+    "presentVerb": "Smash",
+    "damage": 2,
+    "durability": 3,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 80
+  },
+  {
+    "name": "Ring Of Power",
+    "pastVerb": "Burned",
+    "presentVerb": "Burn",
+    "damage": 8,
+    "durability": 3,
+    "toInflictStatus": "BURNING",
+    "range": 1,
+    "accuracy": 80
+  },
+  {
+    "name": "Holy Water",
+    "pastVerb": "Purified",
+    "presentVerb": "Purify",
+    "damage": 6,
+    "durability": 5,
+    "toInflictStatus": "BURNING",
+    "range": 1,
+    "accuracy": 90
+  },
+  {
+    "name": "Pudding Canon",
+    "pastVerb": "Shot",
+    "presentVerb": "Shoot",
+    "damage": 4,
+    "durability": 9,
+    "toInflictStatus": "NONE",
+    "range": 5,
+    "accuracy": 40
+  },
+  {
+    "name": "Dwarf Tooth Canon",
+    "pastVerb": "Shot",
+    "presentVerb": "Shoot",
+    "damage": 6,
+    "durability": 4,
+    "toInflictStatus": "BLEEDING",
+    "range": 3,
+    "accuracy": 60
+  },
+  {
+    "name": "Glitter Bow",
+    "pastVerb": "Fancily Shot",
+    "presentVerb": "Fancily Shoot",
+    "damage": 6,
+    "durability": 3,
+    "toInflictStatus": "BEDAZZLED",
+    "range": 4,
+    "accuracy": 40
+  },
+  {
+    "name": "Exploding Present",
+    "pastVerb": "Surprised",
+    "presentVerb": "Surprise",
+    "damage": 10,
+    "durability": 1,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 80
+  },
+  {
+    "name": "Poisonous Spinach",
+    "pastVerb": "Poisoned",
+    "presentVerb": "Poison",
+    "damage": 4,
+    "durability": 3,
+    "toInflictStatus": "POISONED",
+    "range": 1,
+    "accuracy": 90
+  },
+  {
+    "name": "Laser Pen",
+    "pastVerb": "Blinded",
+    "presentVerb": "Blind",
+    "damage": 4,
+    "durability": 10,
+    "toInflictStatus": "BLINDED",
+    "range": 9,
+    "accuracy": 90
+  },
+  {
+    "name": "Big Shoe",
+    "pastVerb": "Hit",
+    "presentVerb": "Hit",
+    "damage": 4,
+    "durability": 7,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 80
+  },
+  {
+    "name": "See-through Tape",
+    "pastVerb": "Taped",
+    "presentVerb": "Tape",
+    "damage": 5,
+    "durability": 6,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 75
+  },
+  {
+    "name": "Hundred Strange Men",
+    "pastVerb": "Scared",
+    "presentVerb": "Scare",
+    "damage": 8,
+    "durability": 2,
+    "toInflictStatus": "NONE",
+    "range": 2,
+    "accuracy": 100
+  },
+  {
+    "name": "Car Door",
+    "pastVerb": "Hit",
+    "presentVerb": "Hit",
+    "damage": 8,
+    "durability": 3,
+    "toInflictStatus": "NONE",
+    "range": 1,
+    "accuracy": 35
+  },
+  {
+    "name": "Broccoli Bomb",
+    "pastVerb": "Exploded",
+    "presentVerb": "Explode",
+    "damage": 10,
+    "durability": 1,
+    "toInflictStatus": "BLEEDING",
+    "range": 2,
+    "accuracy": 45
+  },
+  {
+    "name": "Priest",
+    "pastVerb": "Married",
+    "presentVerb": "Marry",
+    "damage": 0,
+    "durability": 1,
+    "toInflictStatus": "MARRIED",
+    "range": 1,
+    "accuracy": 100
+  }
 ]

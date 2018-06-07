@@ -308,11 +308,11 @@ public class ArenaCharacter implements ArenaObject {
             newStatusesDefender.add(Statuses.MARRIED);
             this.torso.setStatuses(newStatusesAttacker);
             defendingCharacter.getTorso().setStatuses(newStatusesDefender);
+        }
 
-            this.currentWeapon.loseDurability();
-            if (this.currentWeapon.getDurability() <= 0) {
-                toReturnString += this.breakWeapon();
-            }
+        this.currentWeapon.loseDurability();
+        if (this.currentWeapon.getDurability() <= 0) {
+            toReturnString += this.breakWeapon();
         }
 
         return toReturnString;
