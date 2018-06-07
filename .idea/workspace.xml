@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff91230d-643c-4a3a-86c7-51b2c168da87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,16 +62,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weapons.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="weapons.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="240" column="23" selection-start-line="240" selection-start-column="23" selection-end-line="240" selection-end-column="23" />
+            <state relative-caret-position="604">
+              <caret line="230" column="6" selection-start-line="230" selection-start-column="6" selection-end-line="230" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -226,9 +222,9 @@
         <option value="$PROJECT_DIR$/src/main/java/objects/arena/Types.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/race/Human.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/Statuses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" />
         <option value="$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json" />
       </list>
     </option>
   </component>
@@ -895,13 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="240" column="23" selection-start-line="240" selection-start-column="23" selection-end-line="240" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/character/ArenaCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
@@ -941,6 +930,13 @@
             <element signature="e#12181#12182#0" expanded="true" />
             <element signature="e#12209#12210#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jsonFiles/weapons.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="230" column="6" selection-start-line="230" selection-start-column="6" selection-end-line="230" selection-end-column="6" />
         </state>
       </provider>
     </entry>
